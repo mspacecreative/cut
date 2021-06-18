@@ -1,0 +1,17 @@
+.search > div[role=search] {
+	font-size: 0;
+}
+.search input, .search button {
+	font-family: inherit;
+	padding: 10px 15px;
+	font-size: 13px;
+	border: none;
+}
+.search input {
+	background-color: $brandlightgrey;
+}
+.search button[type=submit] {
+	background-color: $brandblue;
+	border: none;
+	color: #fff;
+}

@@ -1,0 +1,52 @@
+.copyright {
+	font-size: 13px;
+	padding: 1em 0;
+}
+.footer-col h3 {
+	margin-top: 2em;
+	font-weight: 600;
+}
+.footer-col:first-of-type h3 {
+	margin-top: 0;
+}
+footer .menu {
+	list-style: none;
+	padding: 0;
+}
+footer .menu li {
+	margin-bottom: .5em;
+}
+.footer-form {
+	display: flex;
+	margin-right: -.5em;
+	margin-left: -.5em;
+	flex-wrap: wrap;
+}
+
+.footer-form .wpcf7-submit {
+	border: 1px solid #fff;
+	background-color: transparent;
+	padding: 10px 15px;
+	color: #fff;
+	font-family: inherit;
+}
+.footer-form input[type=text], .footer-form input[type=email], .footer-form select {
+	width: 100%;
+	padding: 10px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+.footer-form select {
+	margin-top: 1em;
+}
+.footer-form p {
+	padding-left: .5em;
+	padding-right: .5em;
+}
+.footer-form p:nth-of-type(1), .footer-form p:nth-of-type(2) {
+	flex: 0 0 50%;
+}
+.footer-form p:nth-of-type(3), .footer-form p:nth-of-type(4) {
+	flex: 0 0 100%;
+}

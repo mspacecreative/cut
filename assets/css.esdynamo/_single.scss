@@ -1,0 +1,59 @@
+.date {
+	margin-bottom: 2em;
+	display: block;
+	font-size: 13px;
+}
+.single h1 {
+	margin-bottom: .5em;
+}
+.single .post p {
+	font-size: inherit;
+}
+#st-1.sharethis-inline-share-buttons, #st-2.sharethis-inline-share-buttons {
+	margin-bottom: 2em;
+	text-align: left;
+	display: flex;
+}
+#st-2.sharethis-inline-share-buttons {
+	text-align: left;
+}
+#st-1 .st-btn, #st-2 .st-btn {
+	width: 32px;
+	background-color: $brandgrey!important;
+	display: flex!important;
+	align-items: center;
+	justify-content: center;
+}
+#st-1 .st-btn img, #st-2 .st-btn img {
+	max-width: none;
+	width: 15px;
+	height: 15px;
+	top: 0!important;
+}
+.post-pagination {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+.post-pagination li {
+	position: relative;
+	flex: 0 0 50%;
+}
+.prev {
+	margin-left: 15px;
+}
+.next {
+	text-align: right;
+}
+.prev::before {
+	content: "\00AB";
+	margin-left: -15px;
+	margin-right: 5px;
+}
+.next::after {
+	content: "\00BB";
+	margin-right: -15px;
+	margin-left: 5px;
+}

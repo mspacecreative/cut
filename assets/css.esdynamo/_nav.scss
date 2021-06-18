@@ -1,0 +1,73 @@
+nav {
+	font-weight: 400;
+}
+
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+nav li {
+	margin-right: 15px;
+	margin-left: 15px;
+	position: relative;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+.shrink nav li {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.shrink header {
+	padding: 0;
+}
+nav .menu-item-has-children {
+	padding-right: 1em;
+}
+nav .menu-item-has-children::after {
+	content: "\f107";
+	font-family: fontAwesome;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+.shrink nav .menu-item-has-children::after {
+	top: 27px;
+}
+nav li:last-of-type {
+	margin-right: 0;
+}
+nav a {
+	color: $brandblack;
+}
+nav .sub-menu li {
+	white-space: nowrap;
+	margin-left: 0;
+	padding: 0;
+	margin-bottom: 1em;
+}
+nav .sub-menu li:last-of-type {
+	margin-bottom: 0;
+}
+nav .sub-menu li a {
+	//color: #fff;
+}
+.sub-menu {
+	padding: 0;
+}
+.menu-item-has-children:hover > .sub-menu {
+	opacity: 1;
+	visibility: visible;
+	transition: .25s ease-in-out;
+}
+@media (min-width: 1025px) {
+	.sub-menu {
+		position: absolute;
+		top: 100%;
+		visibility: hidden;
+		opacity: 0;
+		padding: 1.5em;
+		background-color: $brandlightgrey;
+		transition: .25s ease-in-out;
+	}
+}

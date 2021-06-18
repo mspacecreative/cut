@@ -1,0 +1,82 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p, .light ol, .light ul, .light a {
+	color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 1em 0;
+	font-weight: 400;
+	line-height: 1.35em;
+}
+h1:first-of-type,h2:first-of-type,h3:first-of-type,h4:first-of-type,h5:first-of-type,h6:first-of-type {
+	margin-top: 0;
+}
+
+.page-title:first-of-type {
+	margin-top: 1em;
+}
+
+p, ol, ul {
+	line-height: 1.35em;
+	color: #555;
+	margin-top: 0;
+}
+
+p:last-of-type, section li:last-of-type {
+	margin-bottom: 0;
+}
+
+section ul ~ p {
+	margin-top: 1em;
+}
+
+a {
+	font-weight: 500;
+	color: $brandgreen;
+}
+
+.page-title {
+	margin: 1em 0;
+}
+
+// ALIGNMENT
+.text-align-center {
+	text-align: center;
+}
+.text-align-right {
+	text-align: right;
+}
+
+// LISTS
+ul {
+	padding: 0 0 0 15px;
+	margin: 0;
+}
+.content-section li, section li {
+	margin-bottom: 1em;
+}
+.content-section li:last-of-type {
+	margin-bottom: 0;
+}
+.actions {
+	padding: 0;
+	list-style: none;
+}
+
+// CTA 
+.banner h2 {
+	margin-bottom: 0;
+}
+
+h1, h2 {
+	color: $brandgrey;
+}
+
+// SPLASH
+#splash h2 {
+	color: $brandgrey;
+}

@@ -1,0 +1,28 @@
+@import "_combine.scss";
+
+body .interface-interface-skeleton__content {
+	max-width: 75%;
+	flex: 0 0 75%;
+	overflow-x: hidden;
+}
+
+body .edit-post-sidebar {
+	width: 100%;
+}
+
+body .interface-interface-skeleton__sidebar {
+	max-width: 25%;
+	flex: 0 0 25%;
+}
+
+@media (min-width: 1920px) {
+	body .interface-interface-skeleton__content {
+		max-width: 70%;
+		flex: 0 0 70%;
+	}
+	
+	body .interface-interface-skeleton__sidebar {
+		max-width: 30%;
+		flex: 0 0 30%;
+	}
+}

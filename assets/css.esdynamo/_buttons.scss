@@ -1,0 +1,91 @@
+.button {
+	padding: 10px 15px;
+	border-width: 1px;
+	border-color: $brandgreen;
+	color: $brandgreen;
+	border-width: 1px;
+	border-style: solid;
+	display: inline-block;
+	margin-top: 1em;
+	transition: 0.25s ease-in-out;
+}
+.button:hover {
+	transition: 0.25s ease-in-out;
+}
+.button.light:hover {
+	transition: 0.25s ease-in-out;
+	background-color: #fff;
+	color: $brandgreen;
+}
+.light .button {
+	border-color: #fff;
+	color: #fff;
+}
+a {
+	text-decoration: none;
+}
+
+// CTA BUTTONS
+.cta-button-container {
+	list-style: none;
+	padding: 0;
+}
+
+// SOCIAL MEDIA INLINE
+.socialMedia {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+}
+.socialMedia li {
+	background-color: $brandlightgreen;
+	border-radius: 100%;
+	border: 1px solid $brandlightgreen;
+	height: 25px;
+	width: 25px;
+	margin: 15px;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	transition: 0.25s ease-in-out;
+}
+.socialMedia li:hover {
+	background-color: transparent;
+	border-color: #fff;
+	transition: 0.25s ease-in-out;
+}
+.socialMedia.inline li {
+	background-color: $brandlightgreen;
+	margin: 0 15px 0 0;
+}
+.socialMedia li a {
+	color: $branddarkgrey;
+	display: block;
+	line-height: 30px;
+	text-align: center;
+	display: flex;
+    align-items: center;
+	font-size: 18px;
+}
+.socialMedia.inline li a, .socialMedia li:hover > a {
+	color: #fff;
+	transition: 0.25s ease-in-out;
+}
+body .fa,body .far,body .fas {
+	font-family: fontAwesome;
+}
+.socialMedia i {
+	font-size: 13px;
+}
+footer .socialMedia {
+	margin-bottom: 2em;
+}
+footer .socialMedia li {
+	margin-top: 0;
+}
+footer .socialMedia li:first-of-type {
+	margin-left: 0;
+}

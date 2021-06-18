@@ -1,0 +1,99 @@
+// OVERLAY
+.modal {
+	position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+	bottom: 0;
+	right: 0;
+	display: none;
+	background-color: rgba(0,0,0,.85);
+	cursor: pointer;
+	-webkit-overflow-scrolling: touch;
+	outline: none;
+}
+.modal_container {
+	position: fixed;
+	z-index: 99999999;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: none;
+	overflow: auto;
+	outline: none;
+}
+.modal_table {
+	display: table;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+	outline: none;
+}
+.modal_table_cell {
+	margin: 0px auto;
+    max-width: 600px;
+    vertical-align: middle;
+    display: table-cell;
+	padding: 2em;
+	pointer-events: none;
+	outline: none;
+}
+.modal_inner.visible {
+	transition: .25s ease-in-out;
+	transform: translate(0, 0);
+}
+.modal_inner {
+	width: inherit;
+    max-width: inherit;
+    height: inherit;
+    margin: 0 auto;
+    pointer-events: all;
+    //padding: 3em;
+    background-color: #fff;
+    position: relative;
+	transition: .25s ease-in-out;
+	transform: translate(0, -30px);
+}
+.closeModalButton {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    outline: none;
+    right: 2em;
+    top: 1em;
+    cursor: pointer;
+    z-index: 999;
+}
+.closeModalButton span {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: $brandblue;
+    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+}
+.closeModalButton span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+.modal-content {
+	padding: 3em;
+}
+.modal_inner .closeModalButton {
+	top: .75em;
+	right: .75em;
+}
+.modal_inner .closeModalButton span {
+	background-color: #000;
+}
+@media (max-width: 850px) {
+	.modal-content {
+		padding: 2em;
+	}
+}
