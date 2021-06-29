@@ -114,7 +114,7 @@ switch ( $titletxtalign ) {
 		</div>
 		<?php endif; ?>
 			
-			<div class="row gutters col_borders<?php if ( $iconsvisible ): echo ' row_with_icons'; endif; if ( $align ): echo $align; endif; ?>">
+			<div class="row gutters col_borders grid<?php if ( $iconsvisible ): echo ' row_with_icons'; endif; if ( $align ): echo $align; endif; ?>">
 				
 				<?php if ( $contenttype === 'custom' ):
 				
