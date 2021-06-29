@@ -8,7 +8,7 @@
 	$(function () {
 		// ADD CLASS TO PARENT CONTAINER OF SHORTCODE COLUMNS
 		if ( $('.content-column').length ) {
-			$(this).parent().addClass('content-column-container');
+			$('.content-column').parent().addClass('content-column-container');
 		}
 		// BLOG PAGINATION
 		if ( $('.next').text() <= 0 ) {
