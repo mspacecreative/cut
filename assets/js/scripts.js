@@ -1,16 +1,16 @@
 (function( root, $, undefined ) {
 	"use strict";
-
-	// ADD CLASS TO PARENT CONTAINER OF SHORTCODE COLUMNS
-	if ( $('.content-column').length ) {
-		$(this).parent().addClass('content-column-container');
-	}
 	
 	// SMOOTH SCROLL AFTER PAGE LOAD
 	if ( window.location.hash ) scroll(0,0);
 	setTimeout( function() { scroll(0,0); }, 1);
 	
 	$(function () {
+		// ADD CLASS TO PARENT CONTAINER OF SHORTCODE COLUMNS
+		if ( $('.content-column').length ) {
+			$(this).parent().addClass('content-column-container');
+		}
+		// BLOG PAGINATION
 		if ( $('.next').text() <= 0 ) {
 			$('.next').remove();
 		}
