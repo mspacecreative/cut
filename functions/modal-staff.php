@@ -3,7 +3,7 @@
 function load_page_by_ajax_callback() {
     check_ajax_referer('view_bio', 'security');
     $args = array(
-        'post_type' => 'staff',
+        'post_type' => 'team',
         'post_status' => 'publish',
         'p' => $_POST['id'],
     );
