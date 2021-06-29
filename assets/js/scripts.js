@@ -36,7 +36,7 @@
 	
 	// CHECK IF URL HAS HASH, IF SO CLOSE MENU AND OVERLAY
 	var menuItem = $('.menu li a'),
-		modalOveraly = $('.modal');
+		modalOverlay = $('.modal');
 	
 	menuItem.click(function() {
 		if ( menuItem.attr('href').indexOf('#') ) {
