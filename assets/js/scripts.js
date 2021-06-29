@@ -35,11 +35,14 @@
 	});
 	
 	// CHECK IF URL HAS HASH, IF SO CLOSE MENU AND OVERLAY
-	var modalOverlay = $('.modal');
-	$('.menu li').click(function() {
-		if ( $(this).children('a').attr('href').indexOf('#') ) {
-			$('body').removeClass('is-active');
-			modalOverlay.fadeOut();
+	var menuItem = $('.menu li a'),
+		modalOveraly = $('.modal');
+	
+	if ( menuItem.attr('href').indexOf('#') ) {
+			menuItem.click{function() {
+				$('body, .hamburger').toggleClass('is-active');
+				modalOverlay.fadeOut();
+			});
 		}
 	});
 	
