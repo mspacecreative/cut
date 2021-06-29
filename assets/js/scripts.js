@@ -38,7 +38,7 @@
 	var menuItem = $('.menu li a'),
 		modalOveraly = $('.modal');
 	
-	menuItem.click{function() {
+	menuItem.click(function() {
 		if ( menuItem.attr('href').indexOf('#') ) {
 			$('body, .hamburger').toggleClass('is-active');
 			modalOverlay.fadeOut();
