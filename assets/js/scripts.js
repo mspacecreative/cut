@@ -38,11 +38,10 @@
 	var menuItem = $('.menu li a'),
 		modalOveraly = $('.modal');
 	
-	if ( menuItem.attr('href').indexOf('#') ) {
-			menuItem.click{function() {
-				$('body, .hamburger').toggleClass('is-active');
-				modalOverlay.fadeOut();
-			});
+	menuItem.click{function() {
+		if ( menuItem.attr('href').indexOf('#') ) {
+			$('body, .hamburger').toggleClass('is-active');
+			modalOverlay.fadeOut();
 		}
 	});
 	
