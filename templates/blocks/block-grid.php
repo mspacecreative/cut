@@ -157,7 +157,7 @@ switch ( $titletxtalign ) {
 				
 				// VARIABLES
 				$title = get_the_title($post->ID);
-				$featuredimg = get_the_post_thumbnail_url( $post->ID, 'headshot' );
+				$featuredimg = get_the_post_thumbnail_url( $post->ID, 'large-square' );
 				$imgalt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
 				$content = apply_filters( 'the_content', get_the_content() );
 				//$excerpt = get_the_excerpt($post->ID);
