@@ -2036,6 +2036,18 @@ header.up {
 	margin-right: 1em;
 }
 
+.content-column-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -1rem;
+	margin-left: -1rem;
+}
+
+.content-column {
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
 nav {
 	font-weight: 400;
 }
