@@ -204,7 +204,7 @@ switch ( $titletxtalign ) {
 					<?php endif; ?>
 					
 					<?php if ( $content ): ?>
-					<p style="font-size: 18px; margin-left: -30px; margin-top: auto;"><a data-id="<?php echo $post->ID ?>" href="<?php echo $permalink ?>" class="read-bio view-article"><?php echo __('Read bio') ?></a></p>
+					<p style="font-size: 18px; margin-top: auto;"><a data-id="<?php echo $post->ID ?>" href="<?php echo $permalink ?>" class="read-bio view-article"><?php echo __('Read bio') ?></a></p>
 					<?php endif;
 					
 					if ( $showcta ) {
