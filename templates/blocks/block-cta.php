@@ -7,6 +7,7 @@ $narrow = get_field('narrow_column');
 $txtalign = get_field('text_alignment');
 $overlayopacity = get_field('overlay_opacity');
 $textcolor = get_field('text_color');
+$rowwidth = get_field('row_width');
 
 switch ( $bgimgposition ) {
 	case 'top':
@@ -20,6 +21,19 @@ switch ( $bgimgposition ) {
 		break;
 	default:
 		$position = 'center center';
+}
+switch ( $rowwidth ) {
+	case '800':
+		$rowwidth = ' max-width-800';
+		break;
+	case '1080':
+		$rowwidth = ' max-width-1080';
+		break;
+	case '1280':
+		$rowwidth = ' max-width-1280';
+		break;
+	default:
+		$rowwidth = '';
 }
 switch ( $textcolor ) {
 	case 'light':
@@ -87,7 +101,7 @@ switch ( $txtalign ) {
 
 	<div class="<?php if ( $tint ): echo $tint; endif; ?>" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; endif; ?>"></div>
 
-	<div data-aos="fade-up" class="inner<?php if ( $narrow ): echo ' max-width-800'; endif; if ( $align ): echo $align; endif; ?>">
+	<div data-aos="fade-up" class="inner<?php if ( $rowwidth ): echo $rowwidth; endif; if ( $align ): echo $align; endif; ?>">
 		<?php include('inc/block-cta-text-size.php'); ?>
 		<?php include('inc/cta-button-dark.php'); ?>
 	</div>
