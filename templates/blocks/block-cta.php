@@ -9,6 +9,17 @@ $overlayopacity = get_field('overlay_opacity');
 $textcolor = get_field('text_color');
 $rowwidth = get_field('row_width');
 
+// CUSTOM ID
+$id = '' . $block['id'];
+if ( !empty($block['anchor']) ) {
+	$id = $block['anchor'];
+}
+// CUSTOM CLASS	
+$className = '';
+if( !empty($block['className']) ) {
+	$className .= ' ' . $block['className'];
+}
+
 switch ( $bgimgposition ) {
 	case 'top':
 		$position = ' top center';
@@ -97,7 +108,7 @@ switch ( $txtalign ) {
 		$align = '';
 } ?>
 
-<section class="top-bottom-padding banner<?php if ( $backgroundcolour ): echo $backgroundcolour; endif; if ( $color ): echo $color; endif; ?>"<?php if ( $backgroundimage ): echo ' style="background-image: url('; echo $backgroundimage; echo ');'; if ( $position ): echo ' background-position: '; echo $position; echo ';'; endif; echo ' background-repeat: no-repeat; background-size: cover;"'; endif; ?>>
+<section<?php if ( $id ): echo ' id="'; echo $id; echo '"'; endif; ?> class="top-bottom-padding banner<?php if ( $backgroundcolour ): echo $backgroundcolour; endif; if ( $color ): echo $color; endif; if ( $className ): echo esc_attr($className); endif; ?>"<?php if ( $backgroundimage ): echo ' style="background-image: url('; echo $backgroundimage; echo ');'; if ( $position ): echo ' background-position: '; echo $position; echo ';'; endif; echo ' background-repeat: no-repeat; background-size: cover;"'; endif; ?>>
 
 	<div class="<?php if ( $tint ): echo $tint; endif; ?>" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; endif; ?>"></div>
 
