@@ -1978,16 +1978,8 @@ header {
 */
 
 header > .inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 100%;
 	padding-left: 4em;
 	padding-right: 4em;
-}
-
-header > .inner > .row {
-	width: 100%;
 }
 
 header.down {
