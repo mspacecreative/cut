@@ -20,7 +20,7 @@ $offsetlayout = get_field('offset_layout');
 $overlayopacity = get_field('overlay_opacity');
 $inner = get_field('inner_container');
 $hide = get_field('hide_block');
-$overlay = get_field('overlay');
+$bgimgoverlay = get_field('background_image_overlay');
 $maxwidth = get_field('max_width');
 $framedimg = get_field('frame_image');
 $framepos = get_field('frame_position');
@@ -92,18 +92,15 @@ switch ( $narrow ) {
 	default:
 		$rowwidth = '';
 }
-switch ( $overlay ) {
-	case 'blue':
-		$tint = 'blue-overlay';
+switch ( $bgimgoverlay ) {
+	case 'dark':
+		$bgimgoverlay = ' dark-overlay light';
 		break;
-	case 'green':
-		$tint = 'green-overlay';
-		break;
-	case 'white':
-		$tint = 'white-overlay';
+	case 'light':
+		$bgimgoverlay = ' light-overlay';
 		break;
 	default:
-		$tint = '';
+		$bgimgoverlay = '';
 }
 switch ( $textcolor ) {
 	case 'light':
@@ -178,7 +175,7 @@ switch ( $gutterspacing ) {
 <section<?php if ( $blockanchor ): echo ' id="'; echo $blockanchor; echo '"'; endif; ?> class="section<?php if ($bgimg): echo ' section_has_bg_img'; endif; if ( $color ): echo $color; endif; if ($shade): echo $shade; endif; if ( $className ): echo esc_attr($className); endif; ?>" style="<?php if ($bgimg): echo 'background-image: url('; echo $bgimg; echo ');'; endif; if ($bgposition): echo ' background-position: '; echo $bgposition; echo ';'; else: echo ' background-position: center;'; endif; ?>">
 	
 	<?php if ( $bgimg ): ?>
-	<div class="<?php if ( $tint ): echo $tint; endif; ?>" style="background-color: #000; position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; endif; ?>"></div>
+	<div class="<?php if ( $tint ): echo $tint; endif; if ($bgimgoverlay): echo $bgimgoverlay; endif	; ?>" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; endif; ?>"></div>
 	<?php endif; ?>
 
 	<div class="inner<?php if ( $rowwidth ): echo $rowwidth; endif; if ( $padding ): echo $padding; endif; if ( $rowborder ): echo $rowborder; endif; ?>">
