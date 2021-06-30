@@ -1,7 +1,7 @@
 <?php
 $imageoverlay = get_field('cta_background_image_overlay');
 $backgroundimage = get_field('background_image');
-$backgroundcolour = get_field('background_color');
+$backgroundcolour = get_field('background_colour');
 $bgimgposition = get_field('background_image_position');
 $narrow = get_field('narrow_column');
 $txtalign = get_field('text_alignment');
@@ -44,14 +44,17 @@ switch ( $imageoverlay ) {
 		$tint = '';
 }
 switch ( $backgroundcolour ) {
-	case 'blue':
-		$shade = ' brandbluebg light';
+	case 'green':
+		$backgroundcolour = ' brandgreen';
 		break;
-	case 'grey':
-		$shade = ' brandgreybg';
+	case 'green-gradient':
+		$backgroundcolour = ' brandgreengradient';
+		break;
+	case 'grey': 
+		$backgroundcolour = ' brandlightgreybg';
 		break;
 	default:
-		$shade = '';
+		$backgroundcolour = '';
 }
 switch ( $imageoverlay ) {
 	case 'blue':
@@ -80,7 +83,7 @@ switch ( $txtalign ) {
 		$align = '';
 } ?>
 
-<section class="top-bottom-padding banner<?php if ( $shade ): echo $shade; endif; if ( $color ): echo $color; endif; ?>"<?php if ( $backgroundimage ): echo ' style="background-image: url('; echo $backgroundimage; echo ');'; if ( $position ): echo ' background-position: '; echo $position; echo ';'; endif; echo ' background-repeat: no-repeat; background-size: cover;"'; endif; ?>>
+<section class="top-bottom-padding banner<?php if ( $backgroundcolour ): echo $backgroundcolour; endif; if ( $color ): echo $color; endif; ?>"<?php if ( $backgroundimage ): echo ' style="background-image: url('; echo $backgroundimage; echo ');'; if ( $position ): echo ' background-position: '; echo $position; echo ';'; endif; echo ' background-repeat: no-repeat; background-size: cover;"'; endif; ?>>
 
 	<div class="<?php if ( $tint ): echo $tint; endif; ?>" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; endif; ?>"></div>
 
