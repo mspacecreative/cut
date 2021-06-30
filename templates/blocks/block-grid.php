@@ -16,6 +16,17 @@ $hideposition = get_field('hide_title');
 $textcolor = get_field('title_and_lead-in_text_colour');
 $boxshadow = get_field('add_box_shadow_to_cards');
 		
+// CUSTOM ID
+$id = '' . $block['id'];
+if ( !empty($block['anchor']) ) {
+	$id = $block['anchor'];
+}
+// CUSTOM CLASS	
+$className = '';
+if( !empty($block['className']) ) {
+	$className .= ' ' . $block['className'];
+}
+
 switch ( $bgcolor ) {
 	case 'green':
 		$shade = ' brandgreen';
@@ -94,7 +105,7 @@ switch ( $titletxtalign ) {
 	default:
 		$align = '';
 } ?>
-<section<?php if ( $anchor ): echo ' id="'; echo $anchor; echo '"'; endif; ?> class="padding-6em<?php if ( $anchor ): echo ' '; echo $anchor; endif; if ( $padding ): echo $padding; endif; if ($shade): echo $shade; endif; ?>"<?php if ( $hide ): echo ' style="display:none;"'; endif; ?>>
+<section<?php if ( $anchor ): echo ' id="'; echo $anchor; echo '"'; endif; ?> class="padding-6em<?php if ( $anchor ): echo ' '; echo $anchor; endif; if ( $padding ): echo $padding; endif; if ($shade): echo $shade; endif; if ( $className ): echo esc_attr($className); endif; ?>"<?php if ( $hide ): echo ' style="display:none;"'; endif; ?>>
 	
 	<div class="inner intro_container<?php if ( $width ): echo $width; endif; ?>">
 		
