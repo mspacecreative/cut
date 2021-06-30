@@ -1736,7 +1736,7 @@ h1, h2 {
 }
 
 .single h1 {
-	margin-bottom: .5em;
+	margin-top: 0;
 }
 
 .single .post p {
