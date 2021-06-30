@@ -21,11 +21,16 @@
 	<body <?php body_class(); ?>>
 		
 		<div class="mobile-nav" style="padding-top: 3em;">
-		<?php 
-		wp_nav_menu( array( 
-			'theme_location' => 'header-menu',
-			'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>', 
-		)); ?>
+			<button class="hamburger-close mobile hamburger--squeeze is-active" type="button" style="border: none; padding: 0; position: absolute; top: 10px; right: 10px;background: none; height: 30px; width: 30px; display: flex; align-items: center; justify-content: center;">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<?php 
+			wp_nav_menu( array( 
+				'theme_location' => 'header-menu',
+				'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>', 
+			)); ?>
 		</div>
 
 		<!-- wrapper -->
@@ -68,18 +73,7 @@
 						<div class="col col-lg-9 col-md-9 col-sm-6 col-xs-6 row end-lg end-md end-sm end-xs social-buttons-header">
 							<!-- social media -->
 							<?php get_template_part('templates/social-media-buttons'); ?>
-							
-							<button class="hamburger-close mobile hamburger--squeeze is-active" type="button" style="border: none; padding: 0; position: absolute; top: 10px; right: 10px;background: none; height: 30px; width: 30px; display: flex; align-items: center; justify-content: center;">
-								<span class="hamburger-box">
-									<span class="hamburger-inner"></span>
-							 	</span>
-							</button>
-							
-							<!-- nav
-							<nav class="nav" role="navigation">
-								<?php html5blank_nav(); ?>
-							</nav>
-							-->
+							<!-- / social media -->
 						</div>
 						
 					</div>
