@@ -41,15 +41,7 @@
 				
 				<div class="inner">
 					
-					<div class="mobile-nav-container">
-					 	<button class="hamburger mobile hamburger--squeeze" type="button">
-					 		 <span class="hamburger-box">
-					 		    <span class="hamburger-inner"></span>
-					 		 </span>
-					 	</button>
-					 </div>
-					
-					<div class="row between-lg between-md middle-lg middle-md middle-sm middle-xs">
+					<div class="row between-lg between-md middle-lg middle-md middle-sm middle-xs between-lg between-md between-sm between-xs">
 
 						<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-6">
 							<!-- logo -->
@@ -74,6 +66,16 @@
 							<!-- social media -->
 							<?php get_template_part('templates/social-media-buttons'); ?>
 							<!-- / social media -->
+							
+							<!-- menu toggle -->
+							<div class="mobile-nav-container">
+							 	<button class="hamburger mobile hamburger--squeeze" type="button">
+							 		 <span class="hamburger-box">
+							 		    <span class="hamburger-inner"></span>
+							 		 </span>
+							 	</button>
+							 </div>
+							<!-- / menu toggle -->
 						</div>
 						
 					</div>
