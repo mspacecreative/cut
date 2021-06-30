@@ -1876,6 +1876,8 @@ figure {
 .view-article {
 	display: inline-block;
 	position: relative;
+	padding-right: 25px;
+	margin-left: 5px;
 }
 
 .view-article::after {
@@ -1883,13 +1885,13 @@ figure {
 	content: "";
 	background-image: url(../img/icons/arrow-right.svg);
 	top: 7px;
-	left: calc(100% + 8px);
 	width: 25px;
 	height: 12.5px;
 	background-repeat: no-repeat;
 	background-position: left -15px center;
 	transition: 0.25s ease-in-out;
 	background-size: cover;
+	right: -5px;
 }
 
 .view-article:hover::after {
