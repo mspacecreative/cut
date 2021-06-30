@@ -2367,6 +2367,11 @@ footer .menu li {
 }
 
 @media (max-device-width: 55em) and (orientation: landscape) {
+	header > .inner {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	
 	#main-content {
 		padding-top: 91px;
 	}
@@ -2381,6 +2386,12 @@ footer .menu li {
 	
 	.splash h1 {
 		font-size: 2.25em;
+	}
+	
+	.social-buttons-header {
+		flex: 0 0 calc(50% - 20px);
+		max-width: calc(50% - 20px);
+		margin-right: 20px;
 	}
 }
 
@@ -2399,6 +2410,11 @@ footer .menu li {
 		background-position: center;
 		height: 100%;
 		background-size: 100%;
+	}
+	
+	header > .inner {
+		padding-left: 2em;
+		padding-right: 2em;
 	}
 	
 	header .socialMedia {
@@ -2440,13 +2456,17 @@ footer .menu li {
 	}
 	
 	.logo {
-		max-width: 200px;
+		max-width: 250px;
 	}
 }
 
 @media (max-width: 20em) {
 	#splash h1 {
 		font-size: 22px;
+	}
+	
+	.logo {
+		max-width: 200px;
 	}
 }
 
