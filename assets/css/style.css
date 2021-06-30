@@ -2436,12 +2436,16 @@ footer .menu li {
 	.splash h1 {
 		font-size: 2.25em;
 	}
-	  /*
-		.col {
-			flex: 0 0 100%;
-			max-width: 100%;
-		}
-		*/
+	
+	.col {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	
+	header .col {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
 	
 	#main-content {
 		padding-top: 91px;
