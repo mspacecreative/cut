@@ -70,6 +70,9 @@ switch ( $bgcolor ) {
 	case 'green-gradient':
 		$shade = ' brandgreengradient';
 		break;
+	case 'dark-grey':
+		$shade = ' branddarkgreybg';
+		break;
 	case 'grey': 
 		$shade = ' brandlightgreybg';
 		break;
