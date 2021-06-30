@@ -18,6 +18,7 @@ $bgimg = get_field('background_image'); ?>
 			?>
 			
 			<div class="inner">
+				<p class="tracked-text small">CASE STUDY</p>
 				<h1 class="page-title<?php if ( $titlealign ): echo ' text-align-center'; endif; ?>"><?php the_title(); ?></h1>
 			</div>
 

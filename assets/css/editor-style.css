@@ -1575,6 +1575,14 @@ a {
 	color: #00B980;
 }
 
+.tracked-text {
+	letter-spacing: 0.05em;
+}
+
+.small {
+	font-size: 14px;
+}
+
 .page-title {
 	margin: 1em 0;
 }
