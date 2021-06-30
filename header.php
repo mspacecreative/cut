@@ -49,7 +49,7 @@
 					 	</button>
 					 </div>
 					
-					<div class="row between-lg between-md middle-lg middle-md">
+					<div class="row between-lg between-md middle-lg middle-md middle-sm middle-xs">
 
 						<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-6">
 							<!-- logo -->
