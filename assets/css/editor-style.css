@@ -1275,15 +1275,21 @@ footer .socialMedia li:first-of-type {
 }
 
 .top-padding.row-border-top, .row-border-top {
-	padding-top: 2em;
 	margin-top: 2em;
+}
+
+.bottom-padding.row-border-top > div, .row-border-top > div {
 	border-top: 1px solid #e9e9e9;
+	padding-top: 2em;
 }
 
 .bottom-padding.row-border-bottom, .row-border-bottom {
-	padding-bottom: 2em;
 	margin-bottom: 2em;
+}
+
+.bottom-padding.row-border-bottom > div, .row-border-bottom > div {
 	border-bottom: 1px solid #e9e9e9;
+	padding-bottom: 2em;
 }
 
 .row.gutters {
