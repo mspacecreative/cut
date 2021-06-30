@@ -24,6 +24,7 @@ $overlay = get_field('overlay');
 $maxwidth = get_field('max_width');
 $framedimg = get_field('frame_image');
 $framepos = get_field('frame_position');
+$rowborder = get_field('row_border');
 
 // CUSTOM ID
 $id = '' . $block['id'];
@@ -51,6 +52,16 @@ switch ($framepos) {
 		break;
 	default:
 		$framepos = ' top-left ';
+}
+switch ($rowborder) {
+	case 'top':
+		$rowborder = ' row-border-top';
+		break;
+	case 'bottom':
+		$rowborder = ' row-border-bottom';
+		break;
+	default:
+		$rowborder = '';
 }
 switch ( $bgcolor ) {
 	case 'green':
@@ -170,7 +181,7 @@ switch ( $gutterspacing ) {
 	<div class="<?php if ( $tint ): echo $tint; endif; ?>" style="background-color: #000; position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; endif; ?>"></div>
 	<?php endif; ?>
 
-	<div class="inner<?php if ( $rowwidth ): echo $rowwidth; endif; if ( $padding ): echo $padding; endif; ?>">
+	<div class="inner<?php if ( $rowwidth ): echo $rowwidth; endif; if ( $padding ): echo $padding; endif; if ( $rowborder ): echo $rowborder; endif; ?>">
 				
 		<?php 
 		if ( $rowheading ) {
