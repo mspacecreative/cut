@@ -10,5 +10,5 @@ if ( $heading ): ?>
 <?php endif;
 	
 if ( $content ): ?>
-<div class="cta-content<?php if ( $bodysize == 'large' ): echo ' large'; endif; ?>"<?php if ($maxwidth): echo ' style="max-width: '; echo $maxwidth; echo ';"'; endif; ?>><?php echo $content ?></div>
+<div class="cta-content<?php if ( $bodysize == 'large' ): echo ' large'; endif; ?>"<?php if ($maxwidth): echo ' style="max-width: '; echo $maxwidth; echo 'px;"'; endif; ?>><?php echo $content ?></div>
 <?php endif;
