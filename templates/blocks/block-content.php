@@ -6,6 +6,7 @@ $bgimgoverlay = get_field('background_image_overlay');
 $width = get_field('content_width');
 $textcolour = get_field('text_colour');
 $txtalign = get_field('text_alignment');
+$rowwidth = get_field('row_width');
 $hide = get_field('hide_block');
 	
 switch ( $bgimgoverlay ) {
@@ -17,6 +18,19 @@ switch ( $bgimgoverlay ) {
 		break;
 	default:
 		$tint = '';
+}
+switch ( $rowwidth ) {
+	case '800':
+		$rowwidth = ' max-width-800';
+		break;
+	case '1080':
+		$rowwidth = ' max-width-1080';
+		break;
+	case '1280':
+		$rowwidth = ' max-width-1280';
+		break;
+	default:
+		$rowwidth = '';
 }
 switch ( $textcolour ) {
 	case 'dark':
@@ -67,7 +81,7 @@ switch ( $bgcolor ) {
 
 <section<?php if ( $blockanchor ): echo ' id="'; echo $blockanchor; echo '"'; endif; ?> class="<?php if ( $align ): echo $align; echo ' '; endif; if ( $bg ): echo $bg; echo ' '; endif; if ( $bgimg ): echo 'bg-img-cover'; endif; if ( $tint ): echo ' '; echo $tint; endif; if ( $shade ): echo $shade; endif; ?>content-section"<?php if ( $bgimg ): echo ' style="background-image: url('; echo $bgimg; echo ');'; echo '"'; endif; if ( $hide ): echo 'style="display:none;"'; endif; ?>>
 	
-	<div class="bullet-points inner<?php if ( $width ): echo ' max-width-800'; endif; if ( $text ): echo ' '; echo $text; endif; ?>">
+	<div class="bullet-points inner<?php if ( $rowwidth ): echo $rowwidth; endif; if ( $text ): echo ' '; echo $text; endif; ?>">
 		<?php include('inc/section-content-loop.php'); ?>
 	</div>
 	
