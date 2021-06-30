@@ -2031,6 +2031,10 @@ header.up {
 	}
 }
 
+.mobile-logo {
+	display: none;
+}
+
 .col_inner {
 	display: flex;
 	flex-direction: column;
@@ -2410,6 +2414,15 @@ footer .menu li {
 		background-position: center;
 		height: 100%;
 		background-size: 100%;
+	}
+	
+	.mobile-logo {
+		display: block;
+		max-width: 120px;
+	}
+	
+	.logo {
+		display: none;
 	}
 	
 	header > .inner {

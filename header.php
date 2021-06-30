@@ -60,6 +60,14 @@
 								</a>
 							</div>
 							<!-- /logo -->
+							<!-- mobile logo -->
+							<div class="mobile-logo">
+								<a href="<?php echo esc_url( home_url() ); ?>">
+									<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/branding/cut-logo.svg" alt="Carbon Utility Token" class="logo-img-mobile">
+								</a>
+							</div>
+							<!-- / mobile logo -->
 						</div>
 						
 						<div class="col col-lg-9 col-md-9 col-sm-6 col-xs-6 row end-lg end-md end-sm end-xs social-buttons-header">

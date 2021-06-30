@@ -156,6 +156,13 @@
 	    height: 100%;
 		background-size: 100%;
 	}
+	.mobile-logo {
+		display: block;
+		max-width: 120px;
+	}
+	.logo {
+		display: none;
+	}
 	header > .inner {
 		padding-left: 2em;
 		padding-right: 2em;
