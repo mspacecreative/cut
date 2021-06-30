@@ -2372,7 +2372,7 @@ footer .menu li {
 	}
 	
 	.logo {
-		max-width: 120px;
+		max-width: 300px;
 	}
 	
 	.splash .col-inner {
@@ -2399,6 +2399,10 @@ footer .menu li {
 		background-position: center;
 		height: 100%;
 		background-size: 100%;
+	}
+	
+	header .socialMedia {
+		display: none;
 	}
 	
 	.splash .col:first-of-type {
@@ -2436,7 +2440,7 @@ footer .menu li {
 	}
 	
 	.logo {
-		max-width: 120px;
+		max-width: 200px;
 	}
 }
 
