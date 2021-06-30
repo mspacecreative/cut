@@ -18,6 +18,11 @@ section, .inner {
 	background: radial-gradient(circle at bottom right, #04f9ad, #00b980 60%);
 }
 
+.section_has_bg_img {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 // OVERLAYS
 .blue-overlay::before, .green-overlay::before {
 	position: absolute;
