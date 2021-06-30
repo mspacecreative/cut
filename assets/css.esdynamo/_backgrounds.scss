@@ -89,13 +89,13 @@ section {
 }
 .texture-top-left::before {
 	background-image: url(../img/backgrounds/cut-texture-top-left.svg);
-	background-position: bottom left;
+	background-position: top left;
 	top: 0;
 	left: 0;
 }
 .texture-top-right::before {
 	background-image: url(../img/backgrounds/cut-texture-top-right.svg);
-	background-position: bottom right;
+	background-position: top right;
 	top: 0;
 	right: 0;
 }
