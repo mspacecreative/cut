@@ -2228,7 +2228,7 @@ footer .menu li {
 	flex-wrap: wrap;
 }
 
-section .wpcf7-submit, section input[type=email], section select, section input[type=text] {
+section .wpcf7-submit, section input[type=email], section select, section input[type=text], section textarea {
 	border: 1px solid #a5a5a5;
 	background-color: transparent;
 	padding: 10px 15px;
