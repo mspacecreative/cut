@@ -41,9 +41,9 @@
 				
 				<div class="inner">
 					
-					<div class="row between-lg between-md middle-lg middle-md middle-sm middle-xs between-lg between-md between-sm between-xs">
+					<div class="row  middle-lg middle-md middle-sm middle-xs between-lg between-md between-sm between-xs">
 
-						<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-6">
 							<!-- logo -->
 							<div class="logo">
 								<a href="<?php echo esc_url( home_url() ); ?>">
@@ -62,7 +62,7 @@
 							<!-- / mobile logo -->
 						</div>
 						
-						<div class="col col-lg-9 col-md-9 col-sm-6 col-xs-6 row end-lg end-md end-sm end-xs social-buttons-header">
+						<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-6 display-flex end-lg end-md end-sm end-xs social-buttons-header">
 							<!-- social media -->
 							<?php get_template_part('templates/social-media-buttons'); ?>
 							<!-- / social media -->
