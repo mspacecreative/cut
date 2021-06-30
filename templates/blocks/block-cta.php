@@ -5,6 +5,7 @@ $backgroundcolour = get_field('background_colour');
 $bgimgposition = get_field('background_image_position');
 $narrow = get_field('narrow_column');
 $txtalign = get_field('text_alignment');
+$bgimgoverlay = get_field('background_image_overlay');
 $overlayopacity = get_field('overlay_opacity');
 $textcolor = get_field('text_color');
 $rowwidth = get_field('row_width');
@@ -68,6 +69,16 @@ switch ( $imageoverlay ) {
 	default:
 		$tint = '';
 }
+switch ( $bgimgoverlay ) {
+	case 'dark':
+		$bgimgoverlay = 'background-color: #000; ';
+		break;
+	case 'light':
+		$bgimgoverlay = 'background-color: #fff; ';
+		break;
+	default:
+		$bgimgoverlay = '';
+}
 switch ( $backgroundcolour ) {
 	case 'green':
 		$backgroundcolour = ' brandgreen';
@@ -80,19 +91,6 @@ switch ( $backgroundcolour ) {
 		break;
 	default:
 		$backgroundcolour = '';
-}
-switch ( $imageoverlay ) {
-	case 'blue':
-		$overlay = ' blue-overlay light';
-		break;
-	case 'green':
-		$overlay = ' green-overlay';
-		break;
-	case 'white':
-		$overlay = ' white-overlay';
-		break;
-	default:
-		$overlay = '';
 }
 switch ( $txtalign ) {
 	case 'center':
@@ -110,7 +108,7 @@ switch ( $txtalign ) {
 
 <section<?php if ( $id ): echo ' id="'; echo $id; echo '"'; endif; ?> class="top-bottom-padding banner<?php if ( $backgroundcolour ): echo $backgroundcolour; endif; if ( $color ): echo $color; endif; if ( $className ): echo esc_attr($className); endif; ?>"<?php if ( $backgroundimage ): echo ' style="background-image: url('; echo $backgroundimage; echo ');'; if ( $position ): echo ' background-position: '; echo $position; echo ';'; endif; echo ' background-repeat: no-repeat; background-size: cover;"'; endif; ?>>
 
-	<div class="<?php if ( $tint ): echo $tint; endif; ?>" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; endif; ?>"></div>
+	<div class="<?php if ( $tint ): echo $tint; endif; ?>" style="<?php if ($bgimgoverlay): echo $bgimgoverlay; endif ; ?>position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; endif; ?>"></div>
 
 	<div data-aos="fade-up" class="inner<?php if ( $rowwidth ): echo $rowwidth; endif; if ( $align ): echo $align; endif; ?>">
 		<?php include('inc/block-cta-text-size.php'); ?>
