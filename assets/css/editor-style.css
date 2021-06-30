@@ -1735,7 +1735,7 @@ h1, h2 {
 	font-size: 13px;
 }
 
-.single h1 {
+.single .page-title:first-of-type, .single .page-title {
 	margin-top: 0;
 }
 
