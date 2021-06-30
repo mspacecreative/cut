@@ -108,7 +108,7 @@ switch ( $txtalign ) {
 
 <section<?php if ( $id ): echo ' id="'; echo $id; echo '"'; endif; ?> class="top-bottom-padding banner<?php if ( $backgroundcolour ): echo $backgroundcolour; endif; if ( $color ): echo $color; endif; if ( $className ): echo esc_attr($className); endif; ?>"<?php if ( $backgroundimage ): echo ' style="background-image: url('; echo $backgroundimage; echo ');'; if ( $position ): echo ' background-position: '; echo $position; echo ';'; endif; echo ' background-repeat: no-repeat; background-size: cover;"'; endif; ?>>
 
-	<div class="<?php if ( $tint ): echo $tint; endif; ?>" style="<?php if ($bgimgoverlay): echo $bgimgoverlay; endif ; ?>position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; else: '.75'; echo ';'; endif; ?>"></div>
+	<div class="<?php if ( $tint ): echo $tint; endif; ?>" style="<?php if ($bgimgoverlay): echo $bgimgoverlay; endif ; ?>position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; else: echo '.75'; echo ';'; endif; ?>"></div>
 
 	<div data-aos="fade-up" class="inner<?php if ( $rowwidth ): echo $rowwidth; endif; if ( $align ): echo $align; endif; ?>">
 		<?php include('inc/block-cta-text-size.php'); ?>
