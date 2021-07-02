@@ -439,9 +439,10 @@ switch ( $gutterspacing ) {
 				elseif ( $contenttype == 'video' ):
 				
 				$video = get_sub_field('video');
-				$poster = get_sub_field('poster'); ?>
+				$poster = get_sub_field('poster');
+				$disableloop = get_sub_field('disable_loop'); ?>
 				
-				<video src="<?php echo $video ?>" poster="<?php echo $poster ?>" autoplay="true" loop="true" style="width: 100%; height: 100%;" playsinline muted>
+				<video src="<?php echo $video ?>" poster="<?php echo $poster ?>" autoplay="true"<?php if (!$disableloop): echo 'loop="true"'; endif; ?> style="width: 100%; height: 100%;" playsinline muted>
 					<source src="<?php echo $video ?>" type="video/mp4" />
 					<!--<source src="https://cdn.mspacecreative.com/cut/CUT_home_montage.webm" type="webm" />-->
 				</video>
