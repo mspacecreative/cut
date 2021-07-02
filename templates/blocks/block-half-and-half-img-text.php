@@ -434,7 +434,18 @@ switch ( $gutterspacing ) {
 					<?php 
 					}
 				}
+				
+				elseif ( $contenttype == 'video' ):
+				
+				$video = get_sub_field('video');
+				$poster = get_sub_fieldfield('poster'); ?>
+				
+				<video src="<?php echo $video ?>" poster="<?php echo $poster ?>" autoplay="true" loop="true" playsinline muted>
+					<source src="<?php echo $video ?>" type="mp4" />
+					<!--<source src="https://cdn.mspacecreative.com/cut/CUT_home_montage.webm" type="webm" />-->
+				</video>
 							
+				<?php 
 				endif; ?>
 				
 			</div>
