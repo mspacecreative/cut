@@ -12,13 +12,13 @@ $hide = get_field('hide_block');
 	
 switch ( $bgimgoverlay ) {
 	case 'dark':
-		$tint = 'dark-overlay light ';
+		$bgimgoverlay = 'dark-overlay light';
 		break;
 	case 'light':
-		$tint = 'light-overlay ';
+		$bgimgoverlay = 'light-overlay';
 		break;
 	default:
-		$tint = '';
+		$bgimgoverlay = '';
 }
 switch ( $rowwidth ) {
 	case '800':
