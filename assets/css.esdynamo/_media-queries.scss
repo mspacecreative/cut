@@ -134,6 +134,12 @@
 		padding-left: 2em;
 		padding-right: 2em;
 	}
+	.footer-col h3 {
+		margin-top: 2em;
+	}
+	footer .col:first-of-type .footer-col h3:first-of-type {
+		margin-top: 0;
+	}
 	#main-content {
 		padding-top: 91px;
 	}
@@ -175,11 +181,11 @@
 		display: block;
 		max-width: 120px;
 	}
-	footer .col:first-of-type .footer-col h3 {
-		margin-top: 0;
-	}
 	.footer-col h3 {
 		margin-top: 2em;
+	}
+	footer .col:first-of-type .footer-col h3:first-of-type {
+		margin-top: 0;
 	}
 	.logo {
 		display: none;

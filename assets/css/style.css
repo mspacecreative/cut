@@ -2447,6 +2447,14 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		padding-right: 2em;
 	}
 	
+	.footer-col h3 {
+		margin-top: 2em;
+	}
+	
+	footer .col:first-of-type .footer-col h3:first-of-type {
+		margin-top: 0;
+	}
+	
 	#main-content {
 		padding-top: 91px;
 	}
@@ -2496,12 +2504,12 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		max-width: 120px;
 	}
 	
-	footer .col:first-of-type .footer-col h3 {
-		margin-top: 0;
-	}
-	
 	.footer-col h3 {
 		margin-top: 2em;
+	}
+	
+	footer .col:first-of-type .footer-col h3:first-of-type {
+		margin-top: 0;
 	}
 	
 	.logo {
