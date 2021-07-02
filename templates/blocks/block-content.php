@@ -111,7 +111,7 @@ switch ( $txtalign ) {
 	$video = get_field('video');
 	$poster = get_field('poster');
 	$disableloop = get_field('disable_loop'); ?>
-	<video class="content-section-bg-video" src="<?php echo $video ?>" poster="<?php echo $poster ?>"<?php if (!$disableloop): echo ' loop="true"'; endif; ?> playsinline muted>
+	<video class="content-section-bg-video" src="<?php echo $video ?>" poster="<?php echo $poster ?>"<?php if (!$disableloop): echo ' loop="true"'; endif; ?> autoplay="true" playsinline muted>
 		<source src="<?php echo $video ?>" type="video/mp4" />
 	</video>
 	<?php endif; ?>
