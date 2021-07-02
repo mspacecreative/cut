@@ -173,6 +173,9 @@
 	.margin-bottom-mobile-md:last-of-type {
 		margin-bottom: 0;
 	}
+	.bottom-left, bottom-right {
+		margin-top: 2em;
+	}
 }
 
 @media (max-width: 30em) {

@@ -2503,6 +2503,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 	.margin-bottom-mobile-md:last-of-type {
 		margin-bottom: 0;
 	}
+	
+	.bottom-left, bottom-right {
+		margin-top: 2em;
+	}
 }
 
 @media (max-width: 30em) {
