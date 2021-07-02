@@ -1,4 +1,5 @@
 <?php
+$backgroundtype = get_field('background_type');
 $bgimg = get_field('background_image');
 $bgcolor = get_field('background_color');
 $bgvideo = get_field('background_video');
@@ -106,7 +107,7 @@ switch ( $txtalign ) {
 	<div style="<?php if ($bgimgoverlay): echo $bgimgoverlay; endif; ?>position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; else: echo '.75'; endif; echo ';'; ?>"></div>
 	<?php endif; ?>
 	
-	<?php if ( $bgvideo ):
+	<?php if ( $backgroundtype == 'video' ):
 	$video = get_field('video');
 	$poster = get_field('poster');
 	$disableloop = get_field('disable_loop'); ?>
