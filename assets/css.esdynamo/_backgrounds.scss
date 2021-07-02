@@ -88,6 +88,12 @@ section {
 	bottom: 0;
 	right: 0;
 }
+.light-texture-bottom-right::before {
+	background-image: url(../img/backgrounds/cut-light-texture-bottom-right.svg);
+	background-position: bottom right;
+	bottom: 0;
+	right: 0;
+}
 .texture-top-left::before {
 	background-image: url(../img/backgrounds/cut-texture-top-left.svg);
 	background-position: top left;
