@@ -175,7 +175,10 @@
 		display: block;
 		max-width: 120px;
 	}
-	footer h3:last-of-type {
+	footer .col:first-of-type .footer-col h3 {
+		margin-top: 0;
+	}
+	.footer-col h3 {
 		margin-top: 2em;
 	}
 	.logo {

@@ -2240,12 +2240,7 @@ nav .sub-menu li:last-of-type {
 }
 
 .footer-col h3 {
-	margin-top: 2em;
 	font-weight: 600;
-}
-
-footer .col:first-of-type .footer-col h3 {
-	margin-top: 0;
 }
 
 footer .menu {
@@ -2501,7 +2496,11 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		max-width: 120px;
 	}
 	
-	footer h3:last-of-type {
+	footer .col:first-of-type .footer-col h3 {
+		margin-top: 0;
+	}
+	
+	.footer-col h3 {
 		margin-top: 2em;
 	}
 	
