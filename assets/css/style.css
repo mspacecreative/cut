@@ -2243,6 +2243,10 @@ nav .sub-menu li:last-of-type {
 	font-weight: 600;
 }
 
+footer .col:first-of-type .footer-col:last-of-type h3 {
+	margin-top: 2em;
+}
+
 footer .menu {
 	list-style: none;
 	padding: 0;

@@ -5,6 +5,9 @@
 .footer-col h3 {
 	font-weight: 600;
 }
+footer .col:first-of-type .footer-col:last-of-type h3 {
+	margin-top: 2em;
+}
 footer .menu {
 	list-style: none;
 	padding: 0;
