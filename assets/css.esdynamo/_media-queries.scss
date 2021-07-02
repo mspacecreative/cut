@@ -36,6 +36,10 @@
 	.top-margin-mobile-2 {
 		margin-top: 2em;
 	}
+	.col:nth-child(4n+1):nth-last-child(-n+4),
+  	.col:nth-child(4n+1):nth-last-child(-n+4) ~ .col {
+		padding-bottom: 0;
+	}
 	header {
 		padding-top: 1em;
 		padding-bottom: 1em;
