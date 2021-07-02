@@ -42,16 +42,16 @@ switch ( $bgcolor ) {
 }
 switch ( $colcount ) {
 	case 'two':
-		$col = 'col-lg-6 col-md-6';
+		$col = ' col-lg-6 col-md-6';
 		break;
 	case 'three':
-		$col = 'col-lg-4 col-md-4';
+		$col = ' col-lg-4 col-md-4';
 		break;
 	case 'four':
-		$col = 'col-lg-3 col-md-3';
+		$col = ' col-lg-3 col-md-3';
 		break;
 	default:
-		$col = 'col-lg-4 col-md-4';
+		$col = ' col-lg-4 col-md-4';
 }
 switch ( $rowwidth ) {
 	case 'default':
@@ -137,7 +137,7 @@ switch ( $titletxtalign ) {
 					$content = get_sub_field('content');
 					$cta = get_sub_field('call_to_action'); ?>
 					
-					<div data-aos="fade-up" class="col bottom-margin-mobile-2 <?php echo $col ?> col-sm-6 col-xs-6">
+					<div data-aos="fade-up" class="col<?php echo $col ?> col-sm-6 col-xs-6">
 						<?php if( !empty( $icon ) ): ?>
 						<div class="col_icon">
 							<img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
@@ -178,7 +178,7 @@ switch ( $titletxtalign ) {
 				$position = get_field('position_title', $post->ID);
 				$headshotplaceholder = get_template_directory_uri() . '/assets/img/placeholders/placeholder-headshot.png'; ?>
 				
-				<div data-aos="fade-up" class="col bottom-margin-mobile-2 <?php echo $col ?> col-sm-6 col-xs-6">
+				<div data-aos="fade-up" class="col<?php echo $col ?> col-sm-6 col-xs-6">
 					<?php if( !empty( $icon ) ): ?>
 					<div class="col_icon">
 						<img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
