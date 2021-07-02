@@ -1575,6 +1575,10 @@ h1:first-of-type, h2:first-of-type, h3:first-of-type, h4:first-of-type, h5:first
 	margin-top: 1em;
 }
 
+.large-text {
+	font-size: 1.17em;
+}
+
 p, ol, ul {
 	line-height: 1.35em;
 	color: #555;

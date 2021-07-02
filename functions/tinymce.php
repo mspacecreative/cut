@@ -52,6 +52,12 @@ function my_custom_styles( $init_array ) {
 	       	'block' => 'span',
 	       	'classes' => 'para-top-line-rule',
 	       	'wrapper' => true,
+        ),
+       	array(
+	       	'title' => 'Large paragraph text',
+	       	'block' => 'span',
+	       	'classes' => 'large-text',
+	       	'wrapper' => true,
         )
     );  
     // Insert the array, JSON ENCODED, into 'style_formats'
