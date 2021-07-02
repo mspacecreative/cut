@@ -2492,6 +2492,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		background-size: 100%;
 	}
 	
+	.bottomMarginMobile {
+		margin-bottom: 2em;
+	}
+	
 	.mobile-logo {
 		display: block;
 		max-width: 120px;
