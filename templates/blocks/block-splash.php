@@ -47,6 +47,10 @@ $flex = get_field('inline_buttons');
 				</ul>
 				<?php endif; ?>
 				
+				<div class="ticker">
+					<p>Ticker - BITTREX: CUT</p>
+				</div>
+				
 			</div>
 		</div>
 		
