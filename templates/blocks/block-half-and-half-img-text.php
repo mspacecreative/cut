@@ -441,8 +441,8 @@ switch ( $gutterspacing ) {
 				$video = get_sub_field('video');
 				$poster = get_sub_field('poster'); ?>
 				
-				<video src="<?php echo $video ?>" poster="<?php echo $poster ?>" autoplay="true" loop="true" playsinline muted>
-					<source src="<?php echo $video ?>" type="video/mp4" style="width: 100%; height: 100%;" />
+				<video src="<?php echo $video ?>" poster="<?php echo $poster ?>" autoplay="true" loop="true" style="width: 100%; height: 100%;" playsinline muted>
+					<source src="<?php echo $video ?>" type="video/mp4" />
 					<!--<source src="https://cdn.mspacecreative.com/cut/CUT_home_montage.webm" type="webm" />-->
 				</video>
 							
