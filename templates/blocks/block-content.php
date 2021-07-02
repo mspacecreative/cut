@@ -30,7 +30,7 @@ switch ($vertalign) {
 		$vertalign = 'center';
 		break;
 	case 'bottom':
-		$vertalign = 'bottom';
+		$vertalign = 'flex-end';
 		break;
 	default:
 		$vertalign = '';
