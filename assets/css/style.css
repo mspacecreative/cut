@@ -1315,6 +1315,7 @@ footer .socialMedia li:first-of-type {
 
 section, .inner {
 	position: relative;
+	z-index: 3;
 }
 
 .brandbluebg {
