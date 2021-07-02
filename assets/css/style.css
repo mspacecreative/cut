@@ -2464,7 +2464,8 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 	}
 	
 	.footer .col:last-of-type > div > div > div {
-		justify-content: flex-start;
+		justify-content: flex-start !important;
+		max-width: 130px;
 	}
 	
 	.logo {
@@ -2508,7 +2509,8 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 	}
 	
 	.footer .col:last-of-type > div > div > div {
-		justify-content: flex-start;
+		justify-content: flex-start !important;
+		max-width: 130px;
 	}
 	
 	.bottom-margin-mobile-2:last-of-type {

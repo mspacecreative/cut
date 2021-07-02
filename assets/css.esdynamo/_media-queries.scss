@@ -147,7 +147,8 @@
 		margin-top: 2em;
 	}
 	.footer .col:last-of-type > div > div > div {
-		justify-content: flex-start;
+		justify-content: flex-start!important;
+		max-width: 130px;
 	}
 	.logo {
 		max-width: 300px;
@@ -184,7 +185,8 @@
 		margin-top: 2em;
 	}
 	.footer .col:last-of-type > div > div > div {
-		justify-content: flex-start;
+		justify-content: flex-start!important;
+		max-width: 130px;
 	}
 	.bottom-margin-mobile-2:last-of-type {
 		margin-bottom: 0;
