@@ -26,7 +26,7 @@ switch ($vertalign) {
 	case 'top':
 		$vertalign = '';
 		break;
-	case 'middle':
+	case 'center':
 		$vertalign = 'center';
 		break;
 	case 'bottom':
