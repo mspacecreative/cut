@@ -80,7 +80,7 @@ switch ( $bgcolor ) {
 		$shade = '';
 } ?>
 
-<section<?php if ( $blockanchor ): echo ' id="'; echo $blockanchor; echo '"'; endif; ?> class="<?php if ( $align ): echo $align; echo ' '; endif; if ( $bg ): echo $bg; echo ' '; endif; if ( $bgimg ): echo 'bg-img-cover'; endif; if ( $tint ): echo ' '; echo $tint; endif; if ( $shade ): echo $shade; endif; ?>content-section"<?php if ( $bgimg ): echo ' style="opacity: '; if ( $overlayopacity ): echo $overlayopacity; else: echo '.75'; echo ';'; endif; ?> background-image: url('; echo $bgimg; echo ');'; echo '"'; endif; if ( $hide ): echo 'style="display:none;"'; endif; ?>>
+<section<?php if ( $blockanchor ): echo ' id="'; echo $blockanchor; echo '"'; endif; ?> class="<?php if ( $align ): echo $align; echo ' '; endif; if ( $bg ): echo $bg; echo ' '; endif; if ( $bgimg ): echo 'bg-img-cover'; endif; if ( $tint ): echo ' '; echo $tint; endif; if ( $shade ): echo $shade; endif; ?>content-section"<?php if ( $bgimg ): echo ' style="opacity: '; if ( $overlayopacity ): echo $overlayopacity; else: echo '.75'; echo ';'; endif; echo 'background-image: url('; echo $bgimg; echo ');'; echo '"'; endif; if ( $hide ): echo 'style="display:none;"'; endif; ?>>
 	
 	<div class="bullet-points inner<?php if ( $rowwidth ): echo $rowwidth; endif; if ( $text ): echo ' '; echo $text; endif; ?>">
 		<?php include('inc/section-content-loop.php'); ?>
