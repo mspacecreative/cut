@@ -2244,7 +2244,7 @@ nav .sub-menu li:last-of-type {
 	font-weight: 600;
 }
 
-.footer-col:first-of-type h3 {
+footer .col:first-of-type .footer-col h3 {
 	margin-top: 0;
 }
 
