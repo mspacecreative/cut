@@ -22,6 +22,20 @@ if( !empty($block['className']) ) {
 	$className .= ' ' . $block['className'];
 }
 
+switch ($vertalign) {
+	case 'top':
+		$vertalign = '';
+		break;
+	case 'middle':
+		$vertalign = 'center';
+		break;
+	case 'bottom':
+		$vertalign = 'bottom';
+		break;
+	default:
+		$vertalign = '';
+}
+
 switch ( $bgcolor ) {
 	case 'green':
 		$bgcolor = ' brandgreen';
