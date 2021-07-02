@@ -38,10 +38,10 @@ switch ( $bgcolor ) {
 }
 switch ( $bgimgoverlay ) {
 	case 'dark':
-		$bgimgoverlay = 'dark-overlay light';
+		$bgimgoverlay = 'background-color: #000; ';
 		break;
 	case 'light':
-		$bgimgoverlay = 'light-overlay';
+		$bgimgoverlay = 'background-color: #fff; ';
 		break;
 	default:
 		$bgimgoverlay = '';
@@ -83,10 +83,10 @@ switch ( $txtalign ) {
 		$txtalign = '';
 } ?>
 
-<section<?php if ( $id ): echo ' id="'; echo $id; echo '"'; endif; ?> class="content-section<?php if ( $textcolour ): echo $textcolour; endif; if ( $bgimg ): echo ' bg-img-cover'; endif; if ( $textcolour ): echo $textcolour; endif; if ($bgcolor): echo $bgcolor; endif; ?>"<?php if ( $bgimg ): echo ' style="background-image: url('; echo $bgimg; echo ');'; echo '"'; endif; if ( $hide ): echo 'style="display:none;"'; endif; ?>>
+<section<?php if ( $id ): echo ' id="'; echo $id; echo '"'; endif; ?> class="content-section<?php if ( $textcolour ): echo $textcolour; endif; if ( $bgimg ): echo ' bg-img-cover'; endif; if ($bgcolor): echo $bgcolor; endif; ?>"<?php if ( $bgimg ): echo ' style="background-image: url('; echo $bgimg; echo ');'; echo '"'; endif; if ( $hide ): echo 'style="display:none;"'; endif; ?>>
 	
 	<?php if ( $bgimg ): ?>
-	<div class="<?php if ($bgimgoverlay): echo $bgimgoverlay; endif; ?>" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; else: echo '.75'; endif; echo ';'; ?>"></div>
+	<div style="<?php if ($bgimgoverlay): echo $bgimgoverlay; endif; ?>position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; else: echo '.75'; endif; echo ';'; ?>"></div>
 	<?php endif; ?>
 	
 	<div class="bullet-points inner<?php if ( $rowwidth ): echo $rowwidth; endif; if ( $txtalign ): echo ' '; echo $txtalign; endif; ?>">
