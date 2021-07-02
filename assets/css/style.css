@@ -1343,6 +1343,15 @@ section, .inner {
 	background-repeat: no-repeat;
 }
 
+.content-section-bg-video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+}
+
 .blue-overlay::before, .green-overlay::before {
 	position: absolute;
 	content: "";

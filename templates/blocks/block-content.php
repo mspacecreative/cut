@@ -1,6 +1,7 @@
 <?php
 $bgimg = get_field('background_image');
 $bgcolor = get_field('background_color');
+$bgvideo = get_field('background_video');
 $bgimgoverlay = get_field('background_image_overlay');
 $width = get_field('content_width');
 $textcolour = get_field('text_colour');
@@ -103,6 +104,15 @@ switch ( $txtalign ) {
 	
 	<?php if ( $bgimg ): ?>
 	<div style="<?php if ($bgimgoverlay): echo $bgimgoverlay; endif; ?>position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; else: echo '.75'; endif; echo ';'; ?>"></div>
+	<?php endif; ?>
+	
+	<?php if ( $bgvideo ):
+	$video = get_field('video');
+	$poster = get_field('poster');
+	$disableloop = get_field('disable_loop'); ?>
+	<video class="content-section-bg-video" src="<?php echo $video ?>" poster="<?php echo $poster ?>"<?php if (!$disableloop): echo ' loop="true"'; endif; ?> playsinline muted>
+		<source src="<?php echo $video ?>" type="video/mp4" />
+	</video>
 	<?php endif; ?>
 	
 	<div class="bullet-points inner<?php if ( $rowwidth ): echo $rowwidth; endif; if ( $txtalign ): echo ' '; echo $txtalign; endif; ?>">
