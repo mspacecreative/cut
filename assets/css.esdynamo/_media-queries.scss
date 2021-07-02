@@ -143,6 +143,12 @@
 	#main-content {
 		padding-top: 91px;
 	}
+	.footer .col:last-of-type {
+		margin-top: 2em;
+	}
+	.footer .col:last-of-type > div > div > div {
+		justify-content: flex-start;
+	}
 	.logo {
 		max-width: 300px;
 	}
@@ -173,6 +179,12 @@
 		background-position: center;
 	    height: 100%;
 		background-size: 100%;
+	}
+	.footer .col:last-of-type {
+		margin-top: 2em;
+	}
+	.footer .col:last-of-type > div > div > div {
+		justify-content: flex-start;
 	}
 	.bottom-margin-mobile-2:last-of-type {
 		margin-bottom: 0;
