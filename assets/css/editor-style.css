@@ -2504,7 +2504,7 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		margin-bottom: 0;
 	}
 	
-	.bottom-left, bottom-right {
+	.bottom-left, .bottom-right {
 		margin-top: 2em;
 	}
 }
