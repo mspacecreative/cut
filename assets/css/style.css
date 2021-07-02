@@ -2451,7 +2451,7 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		margin-top: 2em;
 	}
 	
-	footer .col:first-of-type .footer-col h3:first-of-type {
+	footer .col:first-of-type .footer-col:first-of-type h3 {
 		margin-top: 0;
 	}
 	
@@ -2508,7 +2508,7 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		margin-top: 2em;
 	}
 	
-	footer .col:first-of-type .footer-col h3:first-of-type {
+	footer .col:first-of-type .footer-col:first-of-type h3 {
 		margin-top: 0;
 	}
 	
