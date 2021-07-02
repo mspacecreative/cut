@@ -433,8 +433,9 @@ switch ( $gutterspacing ) {
 						</div>
 					<?php 
 					}
-				}
+				} ?>
 				
+				<?php 
 				elseif ( $contenttype == 'video' ):
 				
 				$video = get_sub_field('video');
