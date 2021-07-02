@@ -82,8 +82,8 @@ switch ( $bgcolor ) {
 
 <section<?php if ( $blockanchor ): echo ' id="'; echo $blockanchor; echo '"'; endif; ?> class="<?php if ( $align ): echo $align; echo ' '; endif; if ( $bg ): echo $bg; echo ' '; endif; if ( $bgimg ): echo 'bg-img-cover'; endif; if ( $tint ): echo ' '; echo $tint; endif; if ( $shade ): echo $shade; endif; ?>content-section"<?php if ( $bgimg ): echo ' style="background-image: url('; echo $bgimg; echo ');'; echo '"'; endif; if ( $hide ): echo 'style="display:none;"'; endif; ?>>
 	
-	<?php if ($bgimg): ?>
-	<div class="<?php if ($bgimgoverlay): echo $bgimgoverlay; endif ; ?>" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; else: echo '.75'; echo ';'; endif; ?>"></div>
+	<?php if ( $bgimg ): ?>
+	<div class="<?php if ($bgimgoverlay): echo $bgimgoverlay; endif; ?>" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; else: echo '.75'; endif; echo ';'; ?>"></div>
 	<?php endif; ?>
 	
 	<div class="bullet-points inner<?php if ( $rowwidth ): echo $rowwidth; endif; if ( $text ): echo ' '; echo $text; endif; ?>">
