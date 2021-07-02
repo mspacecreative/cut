@@ -1388,6 +1388,7 @@ section {
 	height: 100%;
 	width: 100%;
 	background-size: 20% !important;
+	z-index: 2;
 }
 
 .texture-bottom-left::before {
