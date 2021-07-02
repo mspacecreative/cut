@@ -16,6 +16,11 @@
 
 .ticker {
 	margin-top: auto;
+	display: none;
+}
+
+.home .ticker {
+	display: block;
 }
 
 .splash > .row {
