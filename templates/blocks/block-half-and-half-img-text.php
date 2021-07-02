@@ -224,7 +224,7 @@ switch ( $gutterspacing ) {
 					$colwidth = 'col-lg-6';
 			} ?>
 			 		
-			<div data-aos="fade-up"<?php if ( $anchor ): echo ' id="'; echo $anchor; echo '"'; endif; ?> class="<?php if ( $colwidth ): echo $colwidth; echo ' '; else: echo 'col-lg-6 '; endif; if ( $mobile ): echo ' keepSpacing '; endif; ?>bottomMarginMobile col-md-6 col-sm-6 col-xs-12 col">
+			<div data-aos="fade-up"<?php if ( $anchor ): echo ' id="'; echo $anchor; echo '"'; endif; ?> class="<?php if ( $colwidth ): echo $colwidth; echo ' '; else: echo 'col-lg-6 '; endif; if ( $mobile ): echo ' keepSpacing '; endif; ?>bottom-margin-mobile-2 col-md-6 col-sm-6 col-xs-12 col">
 					
 				<?php
 				if ( $contenttype == 'carousel' ): ?>
@@ -349,7 +349,7 @@ switch ( $gutterspacing ) {
 					$colwidth = 'col-lg-6';
 			} ?>
 						
-			<div data-aos="fade-up"<?php if ( $anchor ): echo ' id="'; echo $anchor; echo '"'; endif; ?> class="<?php if ( $colwidth ): echo $colwidth; echo ' '; else: echo 'col-lg-6 '; endif; if ( $mobile ): echo ' keepSpacing '; endif; if ($framedimg): echo ' framed-img '; endif; if ($framepos): echo $framepos; endif; ?>bottomMarginMobile col-md-6 col-sm-6 col-xs-12 col">
+			<div data-aos="fade-up"<?php if ( $anchor ): echo ' id="'; echo $anchor; echo '"'; endif; ?> class="<?php if ( $colwidth ): echo $colwidth; echo ' '; else: echo 'col-lg-6 '; endif; if ( $mobile ): echo ' keepSpacing '; endif; if ($framedimg): echo ' framed-img '; endif; if ($framepos): echo $framepos; endif; ?>bottom-margin-mobile-2 col-md-6 col-sm-6 col-xs-12 col">
 						
 				<?php
 				if ( $contenttype == 'carousel' ): ?>
