@@ -101,7 +101,7 @@ switch ( $txtalign ) {
 		$txtalign = '';
 } ?>
 
-<section<?php if ( $id ): echo ' id="'; echo $id; echo '"'; endif; ?> class="content-section<?php if ( $textcolour ): echo $textcolour; endif; if ( $bgimg ): echo ' section_has_bg_img'; endif; if ($bgcolor): echo $bgcolor; endif; ?>"<?php if ( $bgimg ): echo ' style="background-image: url('; echo $bgimg; echo ');'; endif; if ($minheight): echo ' min-height: '; echo $minheight; echo ';'; endif; if ($vertalign): echo ' display: flex; align-items: '; echo $vertalign; echo ';'; endif; echo '"'; if ( $hide ): echo 'style="display:none;"'; endif; ?>>
+<section<?php if ( $id ): echo ' id="'; echo $id; echo '"'; endif; ?> class="content-section<?php if ( $textcolour ): echo $textcolour; endif; if ( $bgimg ): echo ' section_has_bg_img'; endif; if ($bgcolor): echo $bgcolor; endif; ?>"<?php if ( $bgimg ): echo ' style="background-image: url('; echo $bgimg; echo ');'; endif; if ($minheight): echo ' min-height: '; echo $minheight; echo ';'; endif; if ( $vertalign ): echo ' display: flex; align-items: '; echo $vertalign; echo ';'; endif; echo '"'; if ( $hide ): echo ' style="display:none;"'; endif; ?>>
 	
 	<?php if ( $bgimg ): ?>
 	<div style="<?php if ($bgimgoverlay): echo $bgimgoverlay; endif; ?>position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; else: echo '.75'; endif; echo ';'; ?>"></div>

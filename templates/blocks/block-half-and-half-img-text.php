@@ -9,7 +9,6 @@ $rowheading = get_field('row_heading');
 $headingalignment = get_field('heading_alignment');
 $textcolor = get_field('text_colour');
 $headingcolor = get_field('heading_colour');
-$blockanchor = get_field('block_anchor');
 $reverse = get_field('reverse_columns');
 $narrow = get_field('narrow_row');
 $colratio = get_field('column_ratio');
@@ -175,7 +174,7 @@ switch ( $gutterspacing ) {
 		$gutters = '';
 } ?>
 
-<section<?php if ( $blockanchor ): echo ' id="'; echo $blockanchor; echo '"'; endif; ?> class="section<?php if ($bgimg): echo ' section_has_bg_img'; endif; if ( $color ): echo $color; endif; if ($shade): echo $shade; endif; if ( $className ): echo esc_attr($className); endif; ?>" style="<?php if ($bgimg): echo 'background-image: url('; echo $bgimg; echo ');'; endif; if ($bgposition): echo ' background-position: '; echo $bgposition; echo ';'; else: echo ' background-position: center;'; endif; ?>">
+<section<?php if ( $id ): echo ' id="'; echo $id; echo '"'; endif; ?> class="section<?php if ($bgimg): echo ' section_has_bg_img'; endif; if ( $color ): echo $color; endif; if ($shade): echo $shade; endif; if ( $className ): echo esc_attr($className); endif; ?>" style="<?php if ($bgimg): echo 'background-image: url('; echo $bgimg; echo ');'; endif; if ($bgposition): echo ' background-position: '; echo $bgposition; echo ';'; else: echo ' background-position: center;'; endif; ?>">
 	
 	<?php if ( $bgimg ): ?>
 	<div class="<?php if ( $tint ): echo $tint; endif; ?>" style="<?php if ($bgimgoverlay): echo $bgimgoverlay; endif; ?>position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; endif; ?>"></div>
