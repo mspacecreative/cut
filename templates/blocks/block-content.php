@@ -43,44 +43,21 @@ switch ( $textcolour ) {
 	default:
 		$text = '';
 }
-switch ( $bgcolor ) {
-	case 'blue':
-		$bg = 'brandbluebg light';
-		break;
-	case 'grey':
-		$bg = 'brandlightgreybg';
-		break;
-	default:
-		$bg = '';
-}
 switch ( $txtalign ) {
 	case 'center':
-		$align = ' text-align-center';
+		$align = ' text-align-center ';
 		break;
 	case 'right':
-		$align = ' text-align-right';
+		$align = ' text-align-right ';
 		break;
 	case 'default':
 		$align = '';
 		break;
 	default:
 		$align = '';
-}
-switch ( $bgcolor ) {
-	case 'blue':
-		$shade = ' brandbluebg light';
-		break;
-	case 'green':
-		$shade = ' brandgreenbg';
-		break;
-	case 'grey':
-		$shade = ' brandlightgreybg';
-		break;
-	default:
-		$shade = '';
 } ?>
 
-<section<?php if ( $blockanchor ): echo ' id="'; echo $blockanchor; echo '"'; endif; ?> class="<?php if ( $align ): echo $align; echo ' '; endif; if ( $bg ): echo $bg; echo ' '; endif; if ( $bgimg ): echo 'bg-img-cover'; endif; if ( $tint ): echo ' '; echo $tint; endif; if ( $shade ): echo $shade; endif; ?>content-section"<?php if ( $bgimg ): echo ' style="background-image: url('; echo $bgimg; echo ');'; echo '"'; endif; if ( $hide ): echo 'style="display:none;"'; endif; ?>>
+<section<?php if ( $blockanchor ): echo ' id="'; echo $blockanchor; echo '"'; endif; ?> class="<?php if ( $align ): echo $align; endif; if ( $bgimg ): echo 'bg-img-cover'; endif; if ( $tint ): echo ' '; echo $tint; endif; ?>content-section"<?php if ( $bgimg ): echo ' style="background-image: url('; echo $bgimg; echo ');'; echo '"'; endif; if ( $hide ): echo 'style="display:none;"'; endif; ?>>
 	
 	<?php if ( $bgimg ): ?>
 	<div class="<?php if ($bgimgoverlay): echo $bgimgoverlay; endif; ?>" style="position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: <?php if ( $overlayopacity ): echo $overlayopacity; else: echo '.75'; endif; echo ';'; ?>"></div>
