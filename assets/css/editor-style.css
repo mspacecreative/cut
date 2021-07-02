@@ -2501,6 +2501,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		max-width: 120px;
 	}
 	
+	footer h3:last-of-type {
+		margin-top: 2em;
+	}
+	
 	.logo {
 		display: none;
 	}
