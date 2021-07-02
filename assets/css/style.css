@@ -2337,10 +2337,6 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		margin-top: 2em;
 	}
 	
-	.grid .col:nth-child(4n+1):nth-last-child(-n+4), .grid .col:nth-child(4n+1):nth-last-child(-n+4) ~ .col {
-		padding-bottom: 0;
-	}
-	
 	header {
 		padding-top: 1em;
 		padding-bottom: 1em;
@@ -2386,6 +2382,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 @media (min-width: 64em) {
 	.sidebar {
 		margin-top: 5px;
+	}
+	
+	.grid .col:nth-child(4n+1):nth-last-child(-n+4), .grid .col:nth-child(4n+1):nth-last-child(-n+4) ~ .col {
+		padding-bottom: 0;
 	}
 	
 	.copyright {
