@@ -2495,6 +2495,12 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 	}
 }
 
+@media (min-width: 48em) {
+	.grid .col:nth-child(2n+1):nth-last-child(-n+2), .grid .col:nth-child(2n+1):nth-last-child(-n+2) ~ .col {
+		padding-bottom: 0;
+	}
+}
+
 @media (max-width: 48em) {
 	.margin-bottom-mobile-md {
 		margin-bottom: 3em;
