@@ -1,6 +1,36 @@
 (function( root, $, undefined ) {
 	"use strict";
 	
+	// MOVE BACKGROUND IMAGE HORIZONTALLY WHEN VISIBLE IN VIEWPORT
+	var bgimg = document.querySelector('.section_has_bg_img');
+	
+	(function() {
+		
+		var throttle = function (type, name, obj) {
+			var obj = obj || window;
+			var running = false;
+			var func = function () {
+				if (running) {
+					return;
+				}
+				
+				running = true;
+				requestAnimationFrame(function() {
+					obj.dispatchEvent(new CustomEvent(name));
+					running = false;
+				});
+			};
+			
+			obj.addEventListener(type, func);
+		};
+		
+		throttle("scroll", "optimizedScroll");
+	})();
+	window.addEventListener("optimizedScroll", function() {
+		//leftItem.style.transform = "translateX(-" + window.pageYOffset / 5 + "px";
+		bgimg.style.transform = "translateX(" + window.pageYOffset / 5 + "px";
+	});
+	
 	// SMOOTH SCROLL AFTER PAGE LOAD
 	if ( window.location.hash ) scroll(0,0);
 	setTimeout( function() { scroll(0,0); }, 1);
