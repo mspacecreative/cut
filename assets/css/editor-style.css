@@ -2502,6 +2502,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		font-size: 2.25em;
 	}
 	
+	.bottom-left, .bottom-right {
+		margin-top: 2em;
+	}
+	
 	.social-buttons-header {
 		flex: 0 0 calc(50% - 20px);
 		max-width: calc(50% - 20px);
@@ -2527,10 +2531,6 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 	.bottom-margin-mobile-2 {
 		margin-bottom: 2em;
 	}
-	
-	.bottom-left, .bottom-right {
-		margin-top: 2em;
-	}
 }
 
 @media (max-width: 30em) {
@@ -2538,6 +2538,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		background-position: center;
 		height: 100%;
 		background-size: 100%;
+	}
+	
+	.bottom-left, .bottom-right {
+		margin-top: 2em;
 	}
 	
 	.cut-texture::before {
