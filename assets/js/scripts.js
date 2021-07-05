@@ -38,7 +38,7 @@
 	    var elementTop = $(this).offset().top;
 	    var leftPosition = windowTop - elementTop;
 	      $(this)
-	        .css({ background-position-x: leftPosition });
+	        .css({ backgroundPosition: leftPosition + 'center' });
 	  });
 	});
 	
