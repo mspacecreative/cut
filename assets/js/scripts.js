@@ -3,7 +3,7 @@
 	
 	// TOGGLE CLASS WHEN ELEMENT IN VIEWPORT
 	let scrollpos = window.scrollY
-	const bgimg = document.querySelector("section_has_bg_img")
+	const bgimg = document.querySelector(".section_has_bg_img")
 	const section_height = bgimg.offsetHeight
 	
 	const add_class_on_scroll = () => bgimg.classList.add("visible")
