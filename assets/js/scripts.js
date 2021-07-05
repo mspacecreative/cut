@@ -28,7 +28,7 @@
 	})();
 	window.addEventListener("optimizedScroll", function() {
 		//leftItem.style.transform = "translateX(-" + window.pageYOffset / 5 + "px";
-		bgimg.style.background-position-x = 320 / 5 + "px";
+		bgimg.style.background-position = "left" + window.pageYOffset / 5 + "px" + center;
 	});
 	
 	// SMOOTH SCROLL AFTER PAGE LOAD
