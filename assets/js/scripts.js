@@ -2,7 +2,7 @@
 	"use strict";
 	
 	// MOVE BACKGROUND IMAGE HORIZONTALLY WHEN VISIBLE IN VIEWPORT
-	var bgimg = document.querySelector('.section_has_bg_img');
+	/*var bgimg = document.querySelector('.section_has_bg_img');
 	
 	(function() {
 		
@@ -29,6 +29,17 @@
 	window.addEventListener("optimizedScroll", function() {
 		//leftItem.style.transform = "translateX(-" + window.pageYOffset / 5 + "px";
 		bgimg.style.background-position = "left" + window.pageYOffset / 5 + "px" + "center";
+	});
+	*/
+	
+	$(window).on("load resize scroll", function() {
+	  $(".section_has_bg_img").each(function() {
+	    var windowTop = $(window).scrollTop();
+	    var elementTop = $(this).offset().top;
+	    var leftPosition = windowTop - elementTop;
+	      $(this)
+	        .css({ left: leftPosition });
+	  });
 	});
 	
 	// SMOOTH SCROLL AFTER PAGE LOAD
