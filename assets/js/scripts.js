@@ -2,29 +2,19 @@
 	"use strict";
 	
 	// TOGGLE CLASS WHEN ELEMENT IN VIEWPORT
-	$.fn.inView = function(){
-	    if(!this.length) 
-	        return false;
-	    var rect = this.get(0).getBoundingClientRect();
+	$(document).ready(function(){
+	    $('.section_has_bg_img').bind('inview', function (event, visible) {
 	
-	    return (
-	        rect.top >= 0 &&
-	        rect.left >= 0 &&
-	        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-	        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-	    );
-	
-	};
-	
-	// Additional examples for other use cases
-	// Is true false whether an array of elements are all in view
-	$.fn.allInView = function(){
-	    var all = [];
-	    this.forEach(function(){
-	        all.push( $(this).inView() );
+	        if (visible == true) {
+	        // element is now visible in the viewport
+	            $('.section_has_bg_img').addClass('visible');
+	        }
+	        else{
+	           $('.section_has_bg_img').removeClass('visible');
+	        }  
 	    });
-	    return all.indexOf(false) === -1;
-	};
+	    $('.section_has_bg_img').trigger('inview');
+	});
 	
 	// Only the class elements in view
 	$('.section_has_bg_img').filter(function(){
