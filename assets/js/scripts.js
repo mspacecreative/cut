@@ -3,16 +3,16 @@
 	
 	// TOGGLE CLASS WHEN ELEMENT IN VIEWPORT
 	let scrollpos = window.scrollY
-	const header = document.querySelector("nav")
-	const header_height = header.offsetHeight
+	const bgimg = document.querySelector("section_has_bg_img")
+	const section_height = bgimg.offsetHeight
 	
-	const add_class_on_scroll = () => header.classList.add("fade-in")
-	const remove_class_on_scroll = () => header.classList.remove("fade-in")
+	const add_class_on_scroll = () => bgimg.classList.add("visible")
+	const remove_class_on_scroll = () => header.classList.remove("visible")
 	
 	window.addEventListener('scroll', function() { 
 		scrollpos = window.scrollY;
 	
-		if (scrollpos >= header_height) { add_class_on_scroll() }
+		if (scrollpos >= section_height) { add_class_on_scroll() }
 		else { remove_class_on_scroll() }
 	})
 	
