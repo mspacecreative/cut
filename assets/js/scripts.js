@@ -1,40 +1,6 @@
 (function( root, $, undefined ) {
 	"use strict";
 	
-	// TOGGLE CLASS WHEN ELEMENT IN VIEWPORT
-	$(document).ready(function(){
-	    $('.section_has_bg_img').bind('inview', function (event, visible) {
-	
-	        if (visible == true) {
-	        // element is now visible in the viewport
-	            $('.section_has_bg_img').addClass('visible');
-	        }
-	        else{
-	           $('.section_has_bg_img').removeClass('visible');
-	        }  
-	    });
-	    $('.section_has_bg_img').trigger('inview');
-	});
-	
-	// Only the class elements in view
-	$('.section_has_bg_img').filter(function(){
-	    //return $(this).inView();
-	});
-	
-	// Only the class elements not in view
-	$('.section_has_bg_img').filter(function(){
-	    return !$(this).inView();
-	});
-	
-	$(window).on('scroll',function(){
-
-	    if( $('.section_has_bg_img').inView() ) {
-	        $(this).addClass('visible');
-	    } else {
-	    	$(this).removeClass('visible');
-	    }
-	});
-	
 	// SMOOTH SCROLL AFTER PAGE LOAD
 	if ( window.location.hash ) scroll(0,0);
 	setTimeout( function() { scroll(0,0); }, 1);
@@ -87,6 +53,34 @@
 	
 	$(document).ready(function() {
 		AOS.init();
+		
+		$.fn.visible = function(partial) {
+    
+			var $t            = $(this),
+		          $w            = $(window),
+		          viewTop       = $w.scrollTop(),
+		          viewBottom    = viewTop + $w.height(),
+		          _top          = $t.offset().top,
+		          _bottom       = _top + $t.height(),
+		          compareTop    = partial === true ? _bottom : _top,
+		          compareBottom = partial === true ? _top : _bottom;
+		    
+		    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+		
+		  };
+		    
+		})(jQuery);
+		
+		$(window).scroll(function(event) {
+		  
+		  $(".section_has_bg_img").each(function(i, el) {
+		    var el = $(el);
+		    if (el.visible(true)) {
+		      el.addClass("visible"); 
+		    } else {
+		      el.removeClass("visible");
+		    }
+		  });
 	});
 	
 	// HIDE/SHOW HEADER ON SCROLL
