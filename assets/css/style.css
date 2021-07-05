@@ -2522,6 +2522,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		background-size: 100%;
 	}
 	
+	.col:last-of-type {
+		padding-bottom: 0;
+	}
+	
 	.footer .col:last-of-type {
 		margin-top: 2em;
 	}
