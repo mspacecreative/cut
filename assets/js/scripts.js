@@ -18,7 +18,7 @@
 	
 	// Only the class elements in view
 	$('.section_has_bg_img').filter(function(){
-	    return $(this).inView();
+	    //return $(this).inView();
 	});
 	
 	// Only the class elements not in view
