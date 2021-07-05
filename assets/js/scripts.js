@@ -34,13 +34,12 @@
 	*/
 	
 	$(window).on("load resize scroll", function() {
-	  $(".section_has_bg_img").each(function() {
-	    var windowTop = $(window).scrollTop();
-	    var elementTop = $(this).offset().top;
-	    var leftPosition = (windowTop - elementTop) / 4;
-	      $(this)
-	        .css({ backgroundPositionX: -leftPosition });
-	  });
+		$(".section_has_bg_img").each(function() {
+	  		var windowTop = $(window).scrollTop();
+	  		var elementTop = $(this).offset().top;
+	  		var leftPosition = ((windowTop / 2) - elementTop) / 4;
+	  		$(this).css({ backgroundPositionX: -leftPosition });
+		});
 	});
 	
 	// SMOOTH SCROLL AFTER PAGE LOAD
