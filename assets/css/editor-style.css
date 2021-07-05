@@ -2322,6 +2322,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		}
 		*/
 	
+	.cut-texture::before {
+		background-size: 15% !important;
+	}
+	
 	.vertical-fade {
 		position: absolute;
 		width: 200px;
@@ -2455,6 +2459,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 }
 
 @media (max-device-width: 55em) and (orientation: landscape) {
+	.cut-texture::before {
+		background-size: 50% !important;
+	}
+	
 	header > .inner {
 		padding-left: 2em;
 		padding-right: 2em;
@@ -2529,6 +2537,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		background-position: center;
 		height: 100%;
 		background-size: 100%;
+	}
+	
+	.cut-texture::before {
+		background-size: 50% !important;
 	}
 	
 	.col:last-of-type {
