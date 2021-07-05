@@ -2,19 +2,48 @@
 	"use strict";
 	
 	// TOGGLE CLASS WHEN ELEMENT IN VIEWPORT
-	let scrollpos = window.scrollY
-	const bgimg = document.querySelector(".section_has_bg_img")
-	const section_height = bgimg.offsetHeight
+	$.fn.inView = function(){
+	    if(!this.length) 
+	        return false;
+	    var rect = this.get(0).getBoundingClientRect();
 	
-	const add_class_on_scroll = () => bgimg.classList.add("visible")
-	const remove_class_on_scroll = () => header.classList.remove("visible")
+	    return (
+	        rect.top >= 0 &&
+	        rect.left >= 0 &&
+	        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+	        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+	    );
 	
-	window.addEventListener('scroll', function() { 
-		scrollpos = window.scrollY;
+	};
 	
-		if (scrollpos >= section_height) { add_class_on_scroll() }
-		else { remove_class_on_scroll() }
-	})
+	// Additional examples for other use cases
+	// Is true false whether an array of elements are all in view
+	$.fn.allInView = function(){
+	    var all = [];
+	    this.forEach(function(){
+	        all.push( $(this).inView() );
+	    });
+	    return all.indexOf(false) === -1;
+	};
+	
+	// Only the class elements in view
+	$('.section_has_bg_img').filter(function(){
+	    return $(this).inView();
+	});
+	
+	// Only the class elements not in view
+	$('.section_has_bg_img').filter(function(){
+	    return !$(this).inView();
+	});
+	
+	$(window).on('scroll',function(){
+
+	    if( $('.section_has_bg_img').inView() ) {
+	        $(this).addClass('visible');
+	    } else {
+	    	$(this).removeClass('visible');
+	    }
+	});
 	
 	// SMOOTH SCROLL AFTER PAGE LOAD
 	if ( window.location.hash ) scroll(0,0);
