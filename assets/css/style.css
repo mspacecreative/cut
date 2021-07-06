@@ -2399,10 +2399,6 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
-	
-	.splash {
-		height: auto;
-	}
 }
 
 @media (min-width: 64em) {
@@ -2463,6 +2459,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		padding-bottom: 56.25%;
 	}
 	
+	.splash {
+		height: auto;
+	}
+	
 	.cut-texture::before {
 		background-size: 50% !important;
 	}
@@ -2505,6 +2505,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		font-size: 2.25em;
 	}
 	
+	.splash .col:first-of-type {
+		margin-top: 100px;
+	}
+	
 	.bottom-left, .bottom-right {
 		margin-top: 2em;
 	}
@@ -2531,6 +2535,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		padding-bottom: 56.25%;
 	}
 	
+	.splash {
+		height: auto;
+	}
+	
 	.margin-bottom-mobile-md:last-of-type {
 		margin-bottom: 0;
 	}
@@ -2545,6 +2553,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		background-position: center;
 		height: 100%;
 		background-size: 100%;
+	}
+	
+	.splash .col:first-of-type {
+		margin-top: 100px;
 	}
 	
 	.bottom-left, .bottom-right {

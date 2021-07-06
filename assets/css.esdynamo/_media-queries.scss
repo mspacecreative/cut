@@ -69,10 +69,6 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
-	.splash {
-		//margin-top: 3em;
-		height: auto;
-	}
 }
 
 @media (min-width: 64em) {
@@ -138,6 +134,9 @@
 	.splash .video-container {
 		padding-bottom: 56.25%;
 	}
+	.splash {
+		height: auto;
+	}
 	.cut-texture::before {
 		background-size: 50%!important;
 	}
@@ -170,6 +169,9 @@
 	.splash h1 {
 		font-size: 2.25em;
 	}
+	.splash .col:first-of-type {
+		margin-top: 100px;
+	}
 	.bottom-left, .bottom-right {
 		margin-top: 2em;
 	}
@@ -194,6 +196,9 @@
 	.splash .video-container {
 		padding-bottom: 56.25%;
 	}
+	.splash {
+		height: auto;
+	}
 	.margin-bottom-mobile-md:last-of-type {
 		margin-bottom: 0;
 	}
@@ -207,6 +212,9 @@
 		background-position: center;
 	    height: 100%;
 		background-size: 100%;
+	}
+	.splash .col:first-of-type {
+		margin-top: 100px;
 	}
 	.bottom-left, .bottom-right {
 		margin-top: 2em;
