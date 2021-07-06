@@ -41,6 +41,8 @@
 			  	var elementTop = $(this).offset().top;
 			  	var leftPosition = (windowTop - (elementTop / 4)) / 4;
 			  	$(this).css({ backgroundPositionX: -leftPosition });
+			} else {
+				$(this).css({ backgroundPositionX: 0 });
 			}
 		});
 	});
