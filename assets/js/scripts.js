@@ -6,7 +6,7 @@
 			if (window.matchMedia("(max-width: 480px)").matches) {
 			  	var windowTop = $(window).scrollTop();
 			  	var elementTop = $(this).offset().top;
-			  	var leftPosition = elementTop / 4;
+			  	var leftPosition = windowTop / 2;
 			  	$(this).css({ backgroundPositionX: -leftPosition });
 			} else {
 				$(this).css({ backgroundPositionX: 0 });
