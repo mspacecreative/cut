@@ -25,7 +25,11 @@
 
 .splash-content {
 	margin-top: auto;
-	//margin-bottom: auto;
+	margin-bottom: auto;
+}
+
+.home .splash-content {
+	margin-bottom: 0;
 }
 
 .splash > .row {
