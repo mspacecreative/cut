@@ -2402,10 +2402,6 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 	.splash {
 		height: auto;
 	}
-	
-	.splash .video-container {
-		padding-bottom: 56.25%;
-	}
 }
 
 @media (min-width: 64em) {
@@ -2461,6 +2457,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 }
 
 @media (max-device-width: 55em) and (orientation: landscape) {
+	.splash .video-container {
+		padding-bottom: 56.25%;
+	}
+	
 	.cut-texture::before {
 		background-size: 50% !important;
 	}
@@ -2539,6 +2539,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		background-position: center;
 		height: 100%;
 		background-size: 100%;
+	}
+	
+	.splash .video-container {
+		padding-bottom: 56.25%;
 	}
 	
 	.bottom-left, .bottom-right {
