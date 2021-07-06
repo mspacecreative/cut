@@ -33,14 +33,16 @@
 	});
 	*/
 	
-	$(window).on("load resize scroll", function() {
-		$(".section_has_bg_img").each(function() {
-	  		var windowTop = $(window).scrollTop();
-	  		var elementTop = $(this).offset().top;
-	  		var leftPosition = (windowTop - (elementTop / 4)) / 4;
-	  		$(this).css({ backgroundPositionX: -leftPosition });
+	if (window.matchMedia("(max-width: 30em)").matches) {
+		$(window).on("load resize scroll", function() {
+			$(".section_has_bg_img").each(function() {
+		  		var windowTop = $(window).scrollTop();
+		  		var elementTop = $(this).offset().top;
+		  		var leftPosition = (windowTop - (elementTop / 4)) / 4;
+		  		$(this).css({ backgroundPositionX: -leftPosition });
+			});
 		});
-	});
+	}
 	
 	// SMOOTH SCROLL AFTER PAGE LOAD
 	if ( window.location.hash ) scroll(0,0);
