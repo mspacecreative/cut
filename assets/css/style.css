@@ -2578,6 +2578,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		padding-bottom: 0;
 	}
 	
+	.splash .video-container {
+		padding-bottom: 56.25%;
+	}
+	
 	.bottom-margin-mobile-2:last-of-type {
 		margin-bottom: 0;
 	}
