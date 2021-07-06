@@ -13,6 +13,10 @@ footer .menu {
 	padding: 0;
 	column-count: 2;
 }
+footer .menu li:nth-of-type(2) {
+	break-after: column;
+    break-inside: avoid;
+}
 footer .menu li {
 	margin-bottom: .5em;
 }

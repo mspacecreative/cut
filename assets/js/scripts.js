@@ -53,7 +53,7 @@
 	});
 	
 	// CHECK IF URL HAS HASH, IF SO CLOSE MENU AND OVERLAY
-	var menuItem = $('.menu li a'),
+	var menuItem = $('.mobile-nav .menu li a'),
 		modalOverlay = $('.modal');
 	
 	menuItem.click(function() {
