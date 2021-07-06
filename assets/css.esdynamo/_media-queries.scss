@@ -170,7 +170,7 @@
 		font-size: 2.25em;
 	}
 	.splash .col:first-of-type {
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 	.bottom-left, .bottom-right {
 		margin-top: 2em;
@@ -202,6 +202,9 @@
 	.margin-bottom-mobile-md:last-of-type {
 		margin-bottom: 0;
 	}
+	.splash .col:first-of-type {
+		margin-top: 80px;
+	}
 	.bottom-margin-mobile-2 {
 		margin-bottom: 2em;
 	}
@@ -212,9 +215,6 @@
 		background-position: center;
 	    height: 100%;
 		background-size: 100%;
-	}
-	.splash .col:first-of-type {
-		margin-top: 100px;
 	}
 	.bottom-left, .bottom-right {
 		margin-top: 2em;
@@ -247,9 +247,6 @@
 	}
 	header .socialMedia {
 		display: none;
-	}
-	.splash .col:first-of-type {
-		//margin-top: 78px;
 	}
 	.splash .col-inner {
 		padding-top: 78px;

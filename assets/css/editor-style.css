@@ -2506,7 +2506,7 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 	}
 	
 	.splash .col:first-of-type {
-		margin-top: 100px;
+		margin-top: 80px;
 	}
 	
 	.bottom-left, .bottom-right {
@@ -2543,6 +2543,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		margin-bottom: 0;
 	}
 	
+	.splash .col:first-of-type {
+		margin-top: 80px;
+	}
+	
 	.bottom-margin-mobile-2 {
 		margin-bottom: 2em;
 	}
@@ -2553,10 +2557,6 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		background-position: center;
 		height: 100%;
 		background-size: 100%;
-	}
-	
-	.splash .col:first-of-type {
-		margin-top: 100px;
 	}
 	
 	.bottom-left, .bottom-right {
