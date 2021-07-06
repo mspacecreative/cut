@@ -2348,7 +2348,7 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 
 @media (max-width: 80em) {
 	.splash h1 {
-		font-size: 2.75em;
+		font-size: 2.25em;
 	}
 }
 
