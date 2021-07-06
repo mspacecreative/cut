@@ -1,45 +1,12 @@
 (function( root, $, undefined ) {
 	"use strict";
 	
-	// MOVE BACKGROUND IMAGE HORIZONTALLY WHEN VISIBLE IN VIEWPORT
-	/*
-	var bgimg = document.querySelector('.section_has_bg_img');
-	
-	(function() {
-		
-		var throttle = function (type, name, obj) {
-			var obj = obj || window;
-			var running = false;
-			var func = function () {
-				if (running) {
-					return;
-				}
-				
-				running = true;
-				requestAnimationFrame(function() {
-					obj.dispatchEvent(new CustomEvent(name));
-					running = false;
-				});
-			};
-			
-			obj.addEventListener(type, func);
-		};
-		
-		throttle("scroll", "optimizedScroll");
-	})();
-	window.addEventListener("optimizedScroll", function() {
-		//leftItem.style.transform = "translateX(-" + window.pageYOffset / 5 + "px";
-		bgimg.style.backgroundPosition = "left" + window.pageYOffset / 5 + "px" + "center";
-	});
-	*/
-	
-	
 	$(window).on("load resize scroll", function() {
 		$(".section_has_bg_img").each(function() {
 			if (window.matchMedia("(max-width: 480px)").matches) {
 			  	var windowTop = $(window).scrollTop();
 			  	var elementTop = $(this).offset().top;
-			  	var leftPosition = (windowTop - (elementTop / 4)) / 4;
+			  	var leftPosition = elementTop / 4;
 			  	$(this).css({ backgroundPositionX: -leftPosition });
 			} else {
 				$(this).css({ backgroundPositionX: 0 });
