@@ -33,7 +33,7 @@
 	});
 	*/
 	
-	if (window.matchMedia("(max-width: 30em)").matches) {
+	if (window.matchMedia("(max-width: 480px)").matches) {
 		$(window).on("load resize scroll", function() {
 			$(".section_has_bg_img").each(function() {
 		  		var windowTop = $(window).scrollTop();
