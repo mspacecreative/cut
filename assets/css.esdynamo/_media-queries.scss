@@ -107,6 +107,7 @@
 		max-width: 850px;
 	    margin-right: auto;
 	    margin-left: auto;
+		padding-top: 87px;
 	}
 }
 
@@ -240,7 +241,10 @@
 		display: none;
 	}
 	.splash .col:first-of-type {
-		margin-top: 78px;
+		//margin-top: 78px;
+	}
+	.splash .col-inner {
+		padding-top: 78px;
 	}
 	.splash h1 {
 		font-size: 2.25em;

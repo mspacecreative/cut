@@ -1694,10 +1694,6 @@ h1, h2 {
 	height: 100%;
 }
 
-.splash .col:first-of-type {
-	margin-top: 87px;
-}
-
 .video-container {
 	height: 0;
 	position: relative;
@@ -2436,6 +2432,7 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		max-width: 850px;
 		margin-right: auto;
 		margin-left: auto;
+		padding-top: 87px;
 	}
 }
 
@@ -2588,8 +2585,8 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		display: none;
 	}
 	
-	.splash .col:first-of-type {
-		margin-top: 78px;
+	.splash .col-inner {
+		padding-top: 78px;
 	}
 	
 	.splash h1 {
