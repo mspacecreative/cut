@@ -190,6 +190,9 @@
 	.margin-bottom-mobile-md {
 		margin-bottom: 3em;
 	}
+	.splash .video-container {
+		padding-bottom: 56.25%;
+	}
 	.margin-bottom-mobile-md:last-of-type {
 		margin-bottom: 0;
 	}
@@ -203,9 +206,6 @@
 		background-position: center;
 	    height: 100%;
 		background-size: 100%;
-	}
-	.splash .video-container {
-		padding-bottom: 56.25%;
 	}
 	.bottom-left, .bottom-right {
 		margin-top: 2em;

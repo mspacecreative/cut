@@ -1699,6 +1699,7 @@ h1, h2 {
 }
 
 .video-container {
+	height: 0;
 	position: relative;
 	padding-bottom: 100vh;
 }
@@ -2525,6 +2526,10 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		margin-bottom: 3em;
 	}
 	
+	.splash .video-container {
+		padding-bottom: 56.25%;
+	}
+	
 	.margin-bottom-mobile-md:last-of-type {
 		margin-bottom: 0;
 	}
@@ -2539,10 +2544,6 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		background-position: center;
 		height: 100%;
 		background-size: 100%;
-	}
-	
-	.splash .video-container {
-		padding-bottom: 56.25%;
 	}
 	
 	.bottom-left, .bottom-right {
