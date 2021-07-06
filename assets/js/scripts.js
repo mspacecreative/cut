@@ -33,16 +33,17 @@
 	});
 	*/
 	
-	if (window.matchMedia("(max-width: 480px)").matches) {
-		$(window).on("load resize scroll", function() {
-			$(".section_has_bg_img").each(function() {
-		  		var windowTop = $(window).scrollTop();
-		  		var elementTop = $(this).offset().top;
-		  		var leftPosition = (windowTop - (elementTop / 4)) / 4;
-		  		$(this).css({ backgroundPositionX: -leftPosition });
-			});
+	
+	$(window).on("load resize scroll", function() {
+		$(".section_has_bg_img").each(function() {
+			if (window.matchMedia("(max-width: 480px)").matches) {
+			  	var windowTop = $(window).scrollTop();
+			  	var elementTop = $(this).offset().top;
+			  	var leftPosition = (windowTop - (elementTop / 4)) / 4;
+			  	$(this).css({ backgroundPositionX: -leftPosition });
+			}
 		});
-	}
+	});
 	
 	// SMOOTH SCROLL AFTER PAGE LOAD
 	if ( window.location.hash ) scroll(0,0);
