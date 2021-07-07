@@ -14,6 +14,11 @@
 		});
 	});
 	
+	// ADD ONCE INSTANCE TO ALL ANIMATED ITEMS
+	$('div').data('aos', 'fade-up').each(function() {
+		$(this).attr('data-aos-once', 'true');
+	});
+	
 	// SMOOTH SCROLL AFTER PAGE LOAD
 	if ( window.location.hash ) scroll(0,0);
 	setTimeout( function() { scroll(0,0); }, 1);
