@@ -35,10 +35,16 @@
 
 				<!-- copyright -->
 			    <?php
-				    printf( '<p class="copyright">' . __( '&copy; %1$s %2$s. All rights reserved.', 'torrent' ) . '</p>',
-				    	date( 'Y'),
-				    	esc_html( get_bloginfo( 'name' ) )
-					);
+			    	$credits = get_field('credits', 'options');
+				    if ( $credits ) {
+				    	printf( '<p class="copyright">' . __( '&copy; %1$s ' ) . $credits . __('. All rights reserved.' ) . '</p>',
+						);
+				    } else {
+					    printf( '<p class="copyright">' . __( '&copy; %1$s %2$s. All rights reserved.', 'torrent' ) . '</p>',
+					    	date( 'Y'),
+					    	esc_html( get_bloginfo( 'name' ) )
+						);
+					}
 				?>
 				<!-- /copyright -->
 				
