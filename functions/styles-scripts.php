@@ -28,11 +28,6 @@ function torrent_styles() {
     // REGISTER MAIN CSS
     wp_enqueue_style( 'main' );
     
-    // GOOGLE FONTS PRECONNECT
-    wp_register_style( 'google-fonts-preconnect', 'https://fonts.gstatic.com', array(), null );
-    // Register CSS
-    wp_enqueue_style( 'google-fonts-preconnect' );
-    
     // GOOGLE FONTS
     wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,900;1,200;1,300;1,600;1,900&display=swap', array(), null );
     // Register CSS
