@@ -37,7 +37,7 @@
 			    <?php
 			    	$credits = get_field('credits', 'options');
 				    if ( $credits ) {
-				    	echo '<p class="copyright">' . __( '&copy; ' ); echo date('Y '); . $credits . __('. All rights reserved.' ) . '</p>';
+				    	echo '<p class="copyright">' . __( '&copy; ' ); echo date('Y ') . $credits . __('. All rights reserved.' ) . '</p>';
 				    } else {
 					    printf( '<p class="copyright">' . __( '&copy; %1$s %2$s. All rights reserved.', 'torrent' ) . '</p>',
 					    	date( 'Y'),
