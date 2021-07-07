@@ -15,7 +15,7 @@
 	});
 	
 	// ADD ONCE INSTANCE TO ALL ANIMATED ITEMS
-	$('div').data('aos', 'fade-up').each(function() {
+	$('div, h1').data('aos', 'fade-up').each(function() {
 		$(this).attr('data-aos-once', 'true');
 	});
 	
