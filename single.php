@@ -48,7 +48,7 @@
 				</div>
 				
 				<div class="col col-lg-4 col-md-4 col-sm-12 col-xs-12 top-margin-mobile-4">
-					<?php if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'single-post-sideabar' ) ) ?>
+					<?php get_sidebar('single-post'); ?>
 				</div>
 			
 			</div>
