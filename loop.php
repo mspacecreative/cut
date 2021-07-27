@@ -9,7 +9,7 @@ $defaultimg = get_template_directory_uri() . '/assets/img/placeholders/featuredi
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 			<div class="featured-img-container">
 				<?php if ( has_post_thumbnail() ) : // Check if thumbnail exists. ?>
-				<?php the_post_thumbnail( array( 120, 120 ) ); // Declare pixel size you need inside the array. ?>
+				<?php the_post_thumbnail( 'large' ); // Declare pixel size you need inside the array. ?>
 				<?php else: ?>
 				<img src="<?php echo $defaultimg ?>" class="featuredimg-placeholder">
 				<?php endif; ?>
