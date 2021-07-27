@@ -26,8 +26,6 @@
 			</span>
 			<!-- /post details -->
 			
-			<div class="sharethis-inline-share-buttons"></div>
-			
 			<div class="row gutters">
 
 				<div class="col col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -35,14 +33,6 @@
 					<!-- article -->
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						
-						<!-- post thumbnail -->
-						<?php if ( has_post_thumbnail() ) : // Check if thumbnail exists. ?>
-							<div class="margin-bottom-2">
-							<?php the_post_thumbnail( array( 120, 120 ) ); ?>
-							</div>
-						<?php endif; ?>
-						<!-- /post thumbnail -->
-			
 						<?php the_content(); // Dynamic Content. ?>
 			
 						<div class="sharethis-inline-share-buttons margin-top-2"></div>
