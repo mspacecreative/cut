@@ -1585,6 +1585,10 @@ p, ol, ul {
 	margin-top: 0;
 }
 
+b, strong {
+	font-weight: 600;
+}
+
 p:last-of-type, section li:last-of-type {
 	margin-bottom: 0;
 }
@@ -1604,6 +1608,7 @@ a {
 
 .small {
 	font-size: 14px;
+	line-height: 1em;
 }
 
 .page-title {
