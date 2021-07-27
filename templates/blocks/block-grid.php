@@ -115,7 +115,7 @@ switch ( $titletxtalign ) {
 		<?php endif; ?>
 		
 		<?php if ( $heading ): ?>
-		<h1 data-aos="fade-up"<?php if ( $titlealign ): echo ' class="'; echo $titlealign; echo '"'; endif; if ($titlemaxwidth): echo ' style="max-width: '; echo $titlemaxwidth; echo 'px;'; if ($titletxtalign == 'center') echo ' margin-right: auto; margin-left: auto;'; endif; echo '"'; endif; ?>><?php echo $heading ?></h1>
+		<h1 data-aos="fade-up"<?php if ( $titlealign ): echo ' class="'; echo $titlealign; echo '"'; endif; if ($titlemaxwidth && $titletxtalign == 'center'): echo ' style="max-width: '; echo $titlemaxwidth; echo 'px; margin-right: auto; margin-left: auto;"'; elseif ($titlemaxwidth): echo ' style="max-width: '; echo $titlemaxwidth; echo 'px;"'; endif; ?>><?php echo $heading ?></h1>
 		<?php endif; ?>
 		
 		<?php if ( $body ): ?>
