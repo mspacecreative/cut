@@ -58,6 +58,12 @@ function my_custom_styles( $init_array ) {
 	       	'block' => 'span',
 	       	'classes' => 'large-text',
 	       	'wrapper' => true,
+        ),
+       	array(
+	       	'title' => 'Small paragraph text',
+	       	'block' => 'span',
+	       	'classes' => 'small',
+	       	'wrapper' => true,
         )
     );  
     // Insert the array, JSON ENCODED, into 'style_formats'
