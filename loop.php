@@ -6,15 +6,15 @@ $defaultimg = get_template_directory_uri() . '/assets/img/placeholders/featuredi
 	<article id="post-<?php the_ID(); ?>" <?php post_class('margin-bottom-4'); ?>>
 
 		<!-- post thumbnail -->
-		<?php if ( has_post_thumbnail() ) : // Check if thumbnail exists. ?>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+			<div class="featured-img-container">
+				<?php if ( has_post_thumbnail() ) : // Check if thumbnail exists. ?>
 				<?php the_post_thumbnail( array( 120, 120 ) ); // Declare pixel size you need inside the array. ?>
-			</a>
-		<?php else: ?>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+				<?php else: ?>
 				<img src="<?php echo $defaultimg ?>" class="featuredimg-placeholder">
-			</a>
-		<?php endif; ?>
+				<?php endif; ?>
+			</div>
+		</a>
 		<!-- /post thumbnail -->
 		
 		<div class="row gutters margin-top-2">
