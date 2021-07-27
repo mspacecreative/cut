@@ -147,10 +147,20 @@ function remove_width_attribute( $html ) {
 
 // If Dynamic Sidebar Exists
 if ( function_exists( 'register_sidebar' ) ) {
+    // Define blog sidebar
+    register_sidebar( array(
+        'name'          => esc_html( 'Blog Sidebar', 'cut' ),
+        'description'   => esc_html( 'Content to be displayed in single post sidebar', 'cut' ),
+        'id'            => 'single-post-sidebar',
+        'before_widget' => '<div id="%1$s" class="%2$s footer-col">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ) );
     // Define first footer column
     register_sidebar( array(
-        'name'          => esc_html( 'Footer Column 1', 'torrent' ),
-        'description'   => esc_html( 'Content for first footer column', 'torrent' ),
+        'name'          => esc_html( 'Footer Column 1', 'cut' ),
+        'description'   => esc_html( 'Content for first footer column', 'cut' ),
         'id'            => 'footer-col-1',
         'before_widget' => '<div id="%1$s" class="%2$s footer-col">',
         'after_widget'  => '</div>',
@@ -160,8 +170,8 @@ if ( function_exists( 'register_sidebar' ) ) {
 
     // Define second footer column
     register_sidebar( array(
-        'name'          => esc_html( 'Footer Column 2', 'torrent' ),
-        'description'   => esc_html( 'Content for second footer column', 'torrent' ),
+        'name'          => esc_html( 'Footer Column 2', 'cut' ),
+        'description'   => esc_html( 'Content for second footer column', 'cut' ),
         'id'            => 'footer-col-2',
         'before_widget' => '<div id="%1$s" class="%2$s footer-col">',
         'after_widget'  => '</div>',
@@ -171,8 +181,8 @@ if ( function_exists( 'register_sidebar' ) ) {
 
     // Define third footer column
     register_sidebar( array(
-        'name'          => esc_html( 'Footer Column 3', 'torrent' ),
-        'description'   => esc_html( 'Content for third footer column', 'torrent' ),
+        'name'          => esc_html( 'Footer Column 3', 'cut' ),
+        'description'   => esc_html( 'Content for third footer column', 'cut' ),
         'id'            => 'footer-col-3',
         'before_widget' => '<div id="%1$s" class="%2$s footer-col">',
         'after_widget'  => '</div>',
