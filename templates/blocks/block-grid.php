@@ -15,6 +15,7 @@ $titletxtalign = get_field('title_text_alignment');
 $hideposition = get_field('hide_title');
 $textcolor = get_field('title_and_lead-in_text_colour');
 $boxshadow = get_field('add_box_shadow_to_cards');
+$titlemaxwidth = get_field('title_max_width');
 		
 // CUSTOM ID
 $id = '' . $block['id'];
@@ -114,7 +115,7 @@ switch ( $titletxtalign ) {
 		<?php endif; ?>
 		
 		<?php if ( $heading ): ?>
-		<h1 data-aos="fade-up"<?php if ( $titlealign ): echo ' class="'; echo $titlealign; echo '"'; endif; ?>><?php echo $heading ?></h1>
+		<h1 data-aos="fade-up"<?php if ( $titlealign ): echo ' class="'; echo $titlealign; echo '"'; endif; if ($titlemaxwidth): echo ' style="max-width: '; echo $titlemaxwidth; echo 'px;'; if ($titletxtalign == 'center') echo ' margin-right: auto; margin-left: auto;'; endif; echo '"'; endif; ?>><?php echo $heading ?></h1>
 		<?php endif; ?>
 		
 		<?php if ( $body ): ?>
