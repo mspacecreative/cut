@@ -2672,8 +2672,8 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 	}
 }
 
-body {
-	margin: 8px;
+body.mce-content-body {
+	margin: 10px;
 }
 
 body .interface-interface-skeleton__content {
