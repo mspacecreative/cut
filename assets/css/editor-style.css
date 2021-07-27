@@ -1612,6 +1612,22 @@ figure {
 	margin-bottom: 10px;
 }
 
+.featured-img-container {
+	height: 0;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.featured-img-container img {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, 0);
+	left: 0;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
 @media (min-width: 64em) {
 	.article-excerpt {
 		margin-top: 5px;
