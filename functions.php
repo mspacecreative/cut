@@ -90,11 +90,21 @@ function html5blank_nav() {
 
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts() {
+    /*
     if ( is_page_template( 'single.php' ) ) {
-        // Conditional script(s)
         wp_register_script( 'blogscript', get_template_directory_uri() . '/assets/js/blog.js', array( 'jquery' ), '1.0.0', true );
         wp_enqueue_script( 'blogscript' );
     }
+    */
+    if(is_page()){ //Check if we are viewing a page
+		global $wp_query;
+	 
+	    $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
+		if ($template_name == 'single.php') {
+	           //If page is using slider portfolio template then load our slider script
+		   wp_enqueue_script( 'blogscript', get_template_directory_uri() .'/assets/js/blog.js', array( 'jquery' ), '1.0.0', true );		
+		}
+	}
 }
 
 // Register HTML5 Blank Navigation
