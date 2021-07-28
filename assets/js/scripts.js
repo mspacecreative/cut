@@ -1,11 +1,13 @@
 (function( root, $, undefined ) {
 	"use strict";
 	
+	/*
 	if ( $('.prev').length ) {
 		if ( $('.prev').html().length < 1 ) {
 			$('.prev').css('visibility', 'hidden');
 		}
 	}
+	*/
 	
 	$(window).on("load resize scroll", function() {
 		$(".section_has_bg_img").each(function() {
