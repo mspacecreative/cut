@@ -19,12 +19,12 @@ function torrent_styles() {
         wp_enqueue_style( 'torrent' );
     } else {
         // Custom CSS
-        wp_register_style( 'torrent-styles', get_template_directory_uri() . '/style.css', array(), '1.0' );
+        wp_register_style( 'cut-styles', get_template_directory_uri() . '/style.css', array(), '1.0' );
         // Register CSS
-        wp_enqueue_style( 'torrent-styles' );
+        wp_enqueue_style( 'cut-styles' );
     }
     // MAIN CSS
-    wp_register_style( 'main', get_template_directory_uri() . '/assets/css/style.css', array(), null );
+    wp_register_style( 'main', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0' );
     // REGISTER MAIN CSS
     wp_enqueue_style( 'main' );
     
