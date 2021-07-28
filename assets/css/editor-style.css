@@ -968,7 +968,7 @@
 }
 
 .post-card .row {
-	padding: 0 2em;
+	padding: 0 2em 1em;
 }
 
 @media (min-width: 800px) {
@@ -1619,7 +1619,6 @@ figure {
 	display: inline-block;
 	position: relative;
 	padding-right: 25px;
-	margin-left: 3px;
 }
 
 .view-article::after {
