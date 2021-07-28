@@ -6,7 +6,7 @@
 		
 		<?php if ( have_posts() ) : ?>
 		
-		<div class="inner max-width-1080">
+		<div class="inner">
 			
 			<!-- post title -->
 			<h1 class="page-title">
