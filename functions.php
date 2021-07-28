@@ -303,7 +303,7 @@ function html5blankcomments( $comment, $args, $depth ) {
 \*------------------------------------*/
 
 // Add Actions
-add_action( 'wp_print_scripts', 'html5blank_conditional_scripts' ); // Add Conditional Page Scripts
+add_action( 'wp_enqueue_scripts', 'html5blank_conditional_scripts' ); // Add Conditional Page Scripts
 add_action( 'get_header', 'enable_threaded_comments' ); // Enable Threaded Comments
 add_action( 'init', 'register_html5_menu' ); // Add HTML5 Blank Menu
 add_action( 'widgets_init', 'my_remove_recent_comments_style' ); // Remove inline Recent Comment Styles from wp_head()
