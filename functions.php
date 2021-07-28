@@ -90,10 +90,10 @@ function html5blank_nav() {
 
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts() {
-    if ( is_page( 'pagenamehere' ) ) {
+    if ( is_page_template( 'single.php' ) ) {
         // Conditional script(s)
-        wp_register_script( 'scriptname', get_template_directory_uri() . '/js/scriptname.js', array( 'jquery' ), '1.0.0' );
-        wp_enqueue_script( 'scriptname' );
+        wp_register_script( 'blogscript', get_template_directory_uri() . '/js/blog.js', array( 'jquery' ), '1.0.0', true );
+        wp_enqueue_script( 'blogscript' );
     }
 }
 
