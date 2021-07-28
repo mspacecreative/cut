@@ -1702,6 +1702,15 @@ h1, h2 {
 	font-size: 13px;
 }
 
+.title-date-container {
+	margin-bottom: 2em;
+	border-bottom: 1px solid #d7dccd;
+}
+
+.single .page-title {
+	margin-bottom: .5em;
+}
+
 .single .page-title:first-of-type, .single .page-title {
 	margin-top: 0;
 }
@@ -1749,11 +1758,13 @@ h1, h2 {
 }
 
 .prev {
-	margin-left: 15px;
+	padding-left: 14px;
 }
 
 .next {
-	text-align: right;
+	padding-right: 14px;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .prev::before {

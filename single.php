@@ -8,27 +8,29 @@
 		
 		<div class="inner">
 			
-			<!-- post title -->
-			<h1 class="page-title">
-				<?php the_title(); ?>
-			</h1>
-			<!-- /post title -->
-			
-			<?php 
-			while (have_posts() ) : the_post();
-			$defaultimg = get_template_directory_uri() . '/assets/img/placeholders/featuredimg.jpg'; ?>
-			
-			<!-- post details -->
-			<span class="date">
-				<time date="<?php the_time( 'Y-m-d' ); ?>">
-					<?php the_date(); ?>
-				</time>
-			</span>
-			<!-- /post details -->
+			<?php while (have_posts() ) : the_post(); ?>
 			
 			<div class="row gutters">
 
 				<div class="col col-lg-8 col-md-8 col-sm-12 col-xs-12">
+					
+					<div class="title-date-container">
+			
+						<!-- post title -->
+						<h1 class="page-title">
+							<?php the_title(); ?>
+						</h1>
+						<!-- /post title -->
+						
+						<!-- post details -->
+						<span class="date">
+							<time date="<?php the_time( 'Y-m-d' ); ?>">
+								<?php the_date(); ?>
+							</time>
+						</span>
+						<!-- /post details -->
+					
+					</div>
 			
 					<!-- article -->
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -38,8 +40,8 @@
 						<div class="sharethis-inline-share-buttons margin-top-2"></div>
 						
 						<ul class="post-pagination clearfix">
-							<li class="prev"><?php previous_post_link('%link', 'Previous article'); ?></li>
-							<li class="next"><?php next_post_link('%link', 'Next article'); ?></li>
+							<li class="prev small"><?php previous_post_link('%link', 'Previous article'); ?></li>
+							<li class="next small"><?php next_post_link('%link', 'Next article'); ?></li>
 						</ul>
 			
 					</article>
