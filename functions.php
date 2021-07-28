@@ -92,7 +92,7 @@ function html5blank_nav() {
 function html5blank_conditional_scripts() {
     if ( is_page_template( 'single.php' ) ) {
         // Conditional script(s)
-        wp_register_script( 'blogscript', get_template_directory_uri() . 'assets/js/blog.js', array( 'jquery' ), '1.0.0', true );
+        wp_register_script( 'blogscript', get_template_directory_uri() . '/assets/js/blog.js', array( 'jquery' ), '1.0.0', true );
         wp_enqueue_script( 'blogscript' );
     }
 }
