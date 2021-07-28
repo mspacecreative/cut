@@ -131,6 +131,10 @@
 	    //height: calc(100vh - 85px);
 	    //background-size: cover;
 	}
+	header > .inner, .inner {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
 	.splash .video-container {
 		padding-bottom: 56.25%;
 	}
@@ -243,10 +247,6 @@
 	}
 	.logo {
 		display: none;
-	}
-	header > .inner {
-		padding-left: 2em;
-		padding-right: 2em;
 	}
 	header .socialMedia {
 		display: none;

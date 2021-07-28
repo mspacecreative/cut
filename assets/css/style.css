@@ -2417,6 +2417,11 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 }
 
 @media (max-device-width: 55em) and (orientation: landscape) {
+	header > .inner, .inner {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+	
 	.splash .video-container {
 		padding-bottom: 56.25%;
 	}
@@ -2556,11 +2561,6 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 	
 	.logo {
 		display: none;
-	}
-	
-	header > .inner {
-		padding-left: 2em;
-		padding-right: 2em;
 	}
 	
 	header .socialMedia {
