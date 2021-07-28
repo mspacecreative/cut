@@ -39,6 +39,8 @@
 			 	scrollTop: $(window.location.hash).offset().top + 'px'
 			}, 1000);
 		}
+		// ADD CLASS TO FIRST ARTICLE IN BLOG
+		$('.grid-container').children().first().addClass('first');
 	});
 	
 	// SMOOTH SCROLL TO ANCHORS

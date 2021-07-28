@@ -2,11 +2,11 @@
 
 	<main role="main" aria-label="Content" id="main-content">
 		<!-- section -->
-		<section>
+		<section class="margin-bottom-4">
 			
-			<div class="inner max-width-1080">
+			<div class="inner">
 
-				<h1 class="text-align-center page-title"><?php esc_html_e( 'Insights', 'torrent' ); ?></h1>
+				<h1 class="page-title"><?php esc_html_e( 'Insights' ); ?></h1>
 	
 				<?php get_template_part( 'loop' ); ?>
 	

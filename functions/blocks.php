@@ -1,6 +1,6 @@
 <?php
 
-add_filter( 'allowed_block_types', 'misha_allowed_block_types' );
+add_filter( 'allowed_block_types_all', 'misha_allowed_block_types' );
  
 function misha_allowed_block_types( $allowed_blocks ) {
  
