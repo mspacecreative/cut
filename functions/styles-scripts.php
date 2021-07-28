@@ -67,5 +67,16 @@ function torrent_styles() {
     );
     wp_localize_script( 'modal-script', 'torrent', $script_data_array );
     wp_enqueue_script('modal-script');
+    
+    if(is_page()){ //Check if we are viewing a page
+		global $wp_query;
+	 
+	    $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
+		if ($template_name == 'single.php') {
+	           //If page is using slider portfolio template then load our slider script
+		   wp_register_script( 'blogscript', get_template_directory_uri() .'/assets/js/blog.js', array( 'jquery' ), '1.0.0', true );	
+		   wp_enqueue_script( 'blogscript' );
+		}
+	}
 }
 add_action( 'wp_enqueue_scripts', 'torrent_styles' ); // Add Theme Stylesheet
