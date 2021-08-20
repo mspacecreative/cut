@@ -45,10 +45,12 @@ section ul ~ p {
 // BLOCKQUOTE
 .wp-block-quote {
 	font-style: italic;
-	line-height: 1.5em;
 	border-left: 3px solid $brandgreen;
 	margin: 1em 0;
 	padding-left: 2em;
+}
+.wp-block-quote p {
+	line-height: 1.5em;
 }
 
 a {
