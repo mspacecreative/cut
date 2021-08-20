@@ -973,6 +973,10 @@
 	padding: 0 2em 1em;
 }
 
+.grid-container > article:first-child {
+	flex-direction: column;
+}
+
 @media (min-width: 800px) {
 	/*
 	.grid-container > article:first-child {
