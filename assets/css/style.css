@@ -1809,6 +1809,10 @@ h1, h2 {
 	margin-left: 5px;
 }
 
+.single .inner .inner {
+	padding: 0;
+}
+
 img {
 	width: 100%;
 	max-width: 100%;
