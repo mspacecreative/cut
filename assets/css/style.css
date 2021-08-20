@@ -1231,6 +1231,7 @@ table {
 .post-card .row {
 	padding: 0 2em 2em;
 	height: 100%;
+	flex-direction: column;
 }
 
 .grid-container > article:first-child {
