@@ -980,6 +980,10 @@
 	flex-direction: column;
 }
 
+.post-card .row p:last-child {
+	margin-top: auto;
+}
+
 @media (min-width: 800px) {
 	/*
 	.grid-container > article:first-child {

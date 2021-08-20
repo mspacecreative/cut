@@ -21,6 +21,9 @@
 .grid-container > article:first-child {
 	flex-direction: column;
 }
+.post-card .row p:last-child {
+	margin-top: auto;
+}
 
 @media (min-width: 800px) {
 	/*
