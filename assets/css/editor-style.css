@@ -973,7 +973,7 @@
 
 @media (min-width: 800px) {
 	.grid-container > article:first-child {
-		grid-column: span 2;
+		grid-column: span 3;
 	}
 }
 
