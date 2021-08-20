@@ -11,6 +11,7 @@ function misha_allowed_block_types( $allowed_blocks ) {
 		'core/list',
 		'core/shortcode',
 		'core/spacer',
+		'core/quote',
 		'core/html',
 		'core/freeform',
 		'acf/hero',
