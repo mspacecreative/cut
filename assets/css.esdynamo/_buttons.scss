@@ -9,10 +9,14 @@
 	margin-top: 1em;
 	transition: 0.25s ease-in-out;
 }
+.button.solid {
+	background-color: $brandgreen;
+	color: #fff;
+}
 .button:hover {
 	transition: 0.25s ease-in-out;
 }
-.button.light:hover {
+.button.light:hover, .button.solid:hover {
 	transition: 0.25s ease-in-out;
 	background-color: #fff;
 	color: $brandgreen;

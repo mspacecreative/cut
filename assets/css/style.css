@@ -2698,11 +2698,16 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 	transition: 0.25s ease-in-out;
 }
 
+.button.solid {
+	background-color: #00B980;
+	color: #fff;
+}
+
 .button:hover {
 	transition: 0.25s ease-in-out;
 }
 
-.button.light:hover {
+.button.light:hover, .button.solid:hover {
 	transition: 0.25s ease-in-out;
 	background-color: #fff;
 	color: #00B980;
