@@ -62,6 +62,17 @@
 	height: 100%;
 	width: 100%;
 }
+
+// FEATURED IMAGE CROPPING
+.anamorphic-img-crop {
+	padding-bottom: 42%;
+}
+.widescreen-img-crop {
+	padding-bottom: 56.25%;
+}
+.square-img-crop {
+	padding-bottom: 100%;
+}
 @media (min-width: 64em) {
 	.article-excerpt {
 		margin-top: 5px;

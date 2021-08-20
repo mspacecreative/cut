@@ -5,7 +5,7 @@
 	<?php 
 	while (have_posts()) : the_post();
 	$defaultimg = get_template_directory_uri() . '/assets/img/placeholders/featuredimg.jpg';
-	$postimgratio = get_field('post_image_ratio');
+	$postimgratio = get_field('post_image_ratio', get_the_ID());
 	
 	switch ($postimgratio) {
 		case 'anamorphic':
