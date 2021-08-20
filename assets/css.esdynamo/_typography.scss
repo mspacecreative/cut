@@ -42,6 +42,15 @@ section ul ~ p {
 	margin-top: 1em;
 }
 
+// BLOCKQUOTE
+.wp-block-quote {
+	font-style: italic;
+	line-height: 1.5em;
+	border-left: 3px solid $brandgreen;
+	margin: 1em 0;
+	padding-left: 2em;
+}
+
 a {
 	font-weight: 500;
 	color: $brandgreen;

@@ -1544,6 +1544,14 @@ section ul ~ p {
 	margin-top: 1em;
 }
 
+.wp-block-quote {
+	font-style: italic;
+	line-height: 1.5em;
+	border-left: 3px solid #00B980;
+	margin: 1em 0;
+	padding-left: 2em;
+}
+
 a {
 	font-weight: 500;
 	color: #00B980;
