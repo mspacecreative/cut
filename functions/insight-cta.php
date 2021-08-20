@@ -7,7 +7,7 @@ function insight_cta() {
 	$html = '';
 	
 	if ($external) {
-		$html = '<a class="button" chref="' . $external . '" target="_blank">' . $label . '</a>';
+		$html = '<a class="button" href="' . $external . '" target="_blank">' . $label . '</a>';
 	} elseif ($internal) {
 		$html = '<a class="button" href="' . $external . '">' . $label . '</a>';
 	} elseif ($download) {
