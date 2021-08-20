@@ -35,7 +35,10 @@
 					<!-- article -->
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						
-						<?php the_content(); // Dynamic Content. ?>
+						<?php 
+						the_content();
+						insight_cta(); 
+						?>
 			
 						<div class="sharethis-inline-share-buttons margin-top-2"></div>
 						
