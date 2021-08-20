@@ -21,7 +21,7 @@
 	display: inline-block;
 	position: relative;
 	padding-right: 25px;
-    //margin-left: 3px;
+    font-size: 16px;
 }
 .view-article::after {
 	position: absolute;
@@ -29,8 +29,8 @@
 	background-image: url(../img/icons/arrow-right.svg);
 	top: 7px;
 	//left: calc(100% + 8px);
-	width: 25px;
-	height: 12.5px;
+	width: 22px;
+	height: 11px;
 	background-repeat: no-repeat;
 	background-position: left -15px center;
 	transition: 0.25s ease-in-out;
