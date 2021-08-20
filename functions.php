@@ -186,7 +186,7 @@ if ( function_exists( 'register_sidebar' ) ) {
 function blogExcerpt() {
 	global $post;
 	$content = apply_filters( 'the_content', get_the_content() );
-	$excerpt = wp_trim_words($content, 20, '&hellip; <p><a class="view-article" href="' . get_permalink($post->ID) . '">' . __('Read article', 'volta') . '</a></p>');
+	$excerpt = wp_trim_words($content, 20, '&hellip; <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('Read article', 'volta') . '</a>');
 	echo $excerpt;
 }
 

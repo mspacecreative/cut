@@ -1228,6 +1228,7 @@ table {
 
 .post-card .row {
 	padding: 0 2em 1em;
+	height: 100%;
 }
 
 .grid-container > article:first-child {
