@@ -40,8 +40,8 @@
 						<div class="sharethis-inline-share-buttons margin-top-2"></div>
 						
 						<ul class="post-pagination clearfix">
-							<li class="prev small"><?php previous_post_link('%link', 'Previous article'); ?></li>
-							<li class="next small"><?php next_post_link('%link', 'Next article'); ?></li>
+							<li class="prev small"><?php previous_post_link('%link', 'Previous insight'); ?></li>
+							<li class="next small"><?php next_post_link('%link', 'Next insight'); ?></li>
 						</ul>
 			
 					</article>
