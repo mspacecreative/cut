@@ -14,5 +14,5 @@ function insight_cta() {
 		$html = '<a href="' . $download . '" target="_blank">' . $label . '</a>';
 	}
 	
-	echo $html;
+	return $html;
 }
