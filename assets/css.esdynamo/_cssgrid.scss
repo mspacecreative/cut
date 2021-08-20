@@ -5,7 +5,7 @@
 }
 /* .grid-container article:not(.first) .row .col */
 .grid-container article .row .col {
-	flex: 0 0 100%;
+	flex: 0 0 auto;
 	max-width: 100%;
 }
 .post-card {
@@ -27,6 +27,10 @@
 .post-card .row .col:last-child {
 	display: flex;
     flex-direction: column;
+	flex: 1;
+}
+.post-excerpt {
+	font-size: 16px;
 }
 
 @media (min-width: 800px) {

@@ -1217,7 +1217,7 @@ table {
 /* .grid-container article:not(.first) .row .col */
 
 .grid-container article .row .col {
-	flex: 0 0 100%;
+	flex: 0 0 auto;
 	max-width: 100%;
 }
 
@@ -1244,6 +1244,11 @@ table {
 .post-card .row .col:last-child {
 	display: flex;
 	flex-direction: column;
+	flex: 1;
+}
+
+.post-excerpt {
+	font-size: 16px;
 }
 
 @media (min-width: 800px) {
@@ -1720,6 +1725,10 @@ h1, h2 {
 	margin-bottom: 2em;
 	display: block;
 	font-size: 13px;
+}
+
+.post-card .date {
+	margin-bottom: 1.5em;
 }
 
 .title-date-container {
