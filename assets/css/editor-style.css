@@ -984,6 +984,11 @@
 	margin-top: auto;
 }
 
+.post-card .row .col:last-child {
+	display: flex;
+	flex-direction: column;
+}
+
 @media (min-width: 800px) {
 	/*
 	.grid-container > article:first-child {
