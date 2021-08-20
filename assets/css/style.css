@@ -1214,7 +1214,9 @@ table {
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.grid-container article:not(.first) .row .col {
+/* .grid-container article:not(.first) .row .col */
+
+.grid-container article .row .col {
 	flex: 0 0 100%;
 	max-width: 100%;
 }
@@ -1229,9 +1231,11 @@ table {
 }
 
 @media (min-width: 800px) {
+	/*
 	.grid-container > article:first-child {
 		grid-column: span 3;
 	}
+	*/
 }
 
 section, .inner {
