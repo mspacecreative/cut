@@ -14,7 +14,7 @@
 		case 'square':
 			$postimgratio = ' square-img-crop';
 			break;
-		case '16:9':
+		case 'widescreen':
 			$postimgratio = ' widescreen-img-crop';
 			break;
 		default:
