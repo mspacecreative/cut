@@ -7,11 +7,11 @@ function insight_cta() {
 	$html = '';
 	
 	if ($external) {
-		$html = '<a href="' . $external . '" target="_blank">' . $label . '</a>';
+		$html = '<a class="button" chref="' . $external . '" target="_blank">' . $label . '</a>';
 	} elseif ($internal) {
-		$html = '<a href="' . $external . '">' . $label . '</a>';
+		$html = '<a class="button" href="' . $external . '">' . $label . '</a>';
 	} elseif ($download) {
-		$html = '<a href="' . $download . '" target="_blank">' . $label . '</a>';
+		$html = '<a class="button" href="' . $download . '" target="_blank">' . $label . '</a>';
 	}
 	
 	return $html;
