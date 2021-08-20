@@ -187,7 +187,7 @@ function blogExcerpt() {
 	global $post;
 	$content = apply_filters( 'the_content', get_the_content() );
 	$trimmedwords = wp_trim_words($content, 20);
-	$excerpt = '<p class="post-excerpt">' . $trimmedwords . '&hellip;</p><p><a class="view-article" href="' . get_permalink($post->ID) . '">' . __('Read article', 'volta') . '</a></p>';
+	$excerpt = '<p class="post-excerpt">' . $trimmedwords . '&hellip;</p><p><a class="view-article" href="' . get_permalink($post->ID) . '">' . __('Read more', 'volta') . '</a></p>';
 	echo $excerpt;
 }
 
