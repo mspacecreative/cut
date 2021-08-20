@@ -358,3 +358,4 @@ include 'functions/modal-staff.php';
 include 'functions/gutenberg.php';
 include 'functions/tinymce.php';
 include 'functions/shortcodes.php';
+include 'functions/widgets.php';

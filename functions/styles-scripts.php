@@ -69,7 +69,7 @@ function torrent_styles() {
     wp_enqueue_script('modal-script');
     
     if ( is_single() ) {
-		wp_register_script( 'blogscript', get_template_directory_uri() .'/assets/js/blog.js', array( 'jquery' ), '1.0.0', true );	
+		wp_register_script( 'blogscript', get_template_directory_uri() . '/assets/js/blog.js', array( 'jquery' ), '1.0.0', true );	
 		wp_enqueue_script( 'blogscript' );
 	}
 }

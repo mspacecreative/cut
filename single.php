@@ -10,7 +10,7 @@
 			
 			<?php while (have_posts() ) : the_post(); ?>
 			
-			<div class="row gutters">
+			<div class="row gutter_wider">
 
 				<div class="col col-lg-8 col-md-8 col-sm-12 col-xs-12">
 					

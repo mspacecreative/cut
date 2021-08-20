@@ -4,14 +4,29 @@
 	
 	<?php 
 	while (have_posts()) : the_post();
-	$defaultimg = get_template_directory_uri() . '/assets/img/placeholders/featuredimg.jpg'; ?>
+	$defaultimg = get_template_directory_uri() . '/assets/img/placeholders/featuredimg.jpg';
+	$postimgratio = get_field('post_image_ratio');
+	
+	switch ($postimgratio) {
+		case 'anamorphic':
+			$postimgratio = '';
+			break;
+		case 'square':
+			$postimgratio = ' square-img-crop';
+			break;
+		case '16:9':
+			$postimgratio = ' widescreen-img-crop';
+			break;
+		default:
+			$postimgratio = '';
+	} ?>
 	
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class('post-card'); ?>>
 	
 			<!-- post thumbnail -->
 			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-				<div class="featured-img-container">
+				<div class="featured-img-container<?php if ($postimgratio): echo $postimgratio; endif; ?>">
 					<?php if ( has_post_thumbnail() ) : // Check if thumbnail exists. ?>
 					<?php the_post_thumbnail( 'large' ); // Declare pixel size you need inside the array. ?>
 					<?php else: ?>
