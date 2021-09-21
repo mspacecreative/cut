@@ -94,3 +94,25 @@ footer .socialMedia li {
 footer .socialMedia li:first-of-type {
 	margin-left: 0;
 }
+
+// BUTTON COLOURS
+.btn-lightgreen {
+	background-color: $brandlightgreen;
+	color: $branddarkgrey;
+}
+.btn-darkgreen {
+	background-color: $brandgreen;
+	color: #fff;
+}
+.btn-darkgrey {
+	background-color: $branddarkgrey;
+	color: #fff;
+}
+.btn-lightgrey {
+	background-color: $brandlightgrey;
+	color: $branddarkgrey;
+}
+.btn-grey {
+	background-color: $brandgrey;
+	color: $branddarkgrey;
+}

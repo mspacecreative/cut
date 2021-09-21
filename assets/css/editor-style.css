@@ -1433,12 +1433,12 @@ h1, h2 {
 .splash h1 {
 	font-size: 3em;
 	line-height: 1.15em;
-	color: #a5a5a5;
+	color: #444;
 	margin: 0;
 }
 
 .splash h2 {
-	color: #a5a5a5;
+	color: #444;
 	margin: 1em 0 0.5em;
 	font-size: 1.25em;
 }

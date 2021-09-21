@@ -22,7 +22,30 @@ $flex = get_field('inline_buttons');
 						// VARS
 						$linktype = get_sub_field('link_type');
 						$label = get_sub_field('label');
+						$btncolor = get_sub_field('button_colour');
 						
+						switch ($btncolor) {
+							case 'transparent':
+								$btncolor = '';
+								break;
+							case 'light-green':
+								$btncolor = ' btn-lightgreen';
+								break;
+							case 'dark-green':
+								$btncolor = ' btn-darkgreen';
+								break;
+							case 'dark-grey':
+								$btncolor = ' btn-darkgrey';
+								break;
+							case 'light-grey':
+								$btncolor = ' btn-lightgrey';
+								break;
+							case 'grey':
+								$btncolor = ' btn-grey';
+								break;
+							default:
+								$btncolor = '';
+						}
 						switch ( $linktype ) {
 							case 'internal':
 								$result = get_sub_field('page_link');
@@ -41,7 +64,7 @@ $flex = get_field('inline_buttons');
 						} ?>
 						
 						<li>
-							<a <?php if ( $linktype == 'anchor' ): echo 'href="#'; echo $result; echo '"'; else: echo 'href="'; echo $result; echo '"'; endif; ?> class="button"><?php if ( $label ): echo $label; else: echo esc_html_e('Learn more'); endif; ?></a>
+							<a <?php if ( $linktype == 'anchor' ): echo 'href="#'; echo $result; echo '"'; else: echo 'href="'; echo $result; echo '"'; endif; ?> class="button"<?php if ($btncolor): $btncolor; endif; ?>"<?php if ($linktype == 'external'): echo ' target="_blank"'; endif; ?>><?php if ( $label ): echo $label; else: echo esc_html_e('Learn more'); endif; ?></a>
 						</li>
 						
 						<?php endwhile; ?>
