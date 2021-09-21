@@ -296,13 +296,13 @@ switch ( $gutterspacing ) {
 					if ( $removeBulletSpacing ) { ?>
 						<div class="bullet-points removeSpacing">
 							<?php echo $content ?>
-							<?php include('inc/cta.php'); ?>
+							<?php echo cta_buttons(); ?>
 						</div>
 					<?php 
 					} else { ?>
 						<div class="bullet-points">
 							<?php echo $content ?>
-							<?php include('inc/cta.php'); ?>
+							<?php echo cta_buttons(); ?>
 						</div>
 					<?php 
 					}
@@ -422,13 +422,13 @@ switch ( $gutterspacing ) {
 					if ( $removeBulletSpacing ) { ?>
 						<div class="bullet-points removeSpacing">
 							<?php echo $contentrightcol ?>
-							<?php include('inc/cta.php'); ?>
+							<?php echo cta_buttons(); ?>
 						</div>
 					<?php 
 					} else { ?>
 						<div class="bullet-points">
 							<?php echo $contentrightcol ?>
-							<?php include('inc/cta.php'); ?>
+							<?php echo cta_buttons(); ?>
 						</div>
 					<?php 
 					}
