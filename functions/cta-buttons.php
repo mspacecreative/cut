@@ -1,9 +1,23 @@
 <?php 
 function cta_buttons() {
 $flex = get_field('inline_buttons');
+$btnalignment = get_field('button_alignment');
+switch ($btnalignment) {
+	case 'left':
+		$btnalignment = '';
+		break;
+	case 'center':
+		$btnalignment = ' display-flex center-lg center-md';
+		break;
+	case 'right':
+		$btnalignment = ' display-flex end-lg end-md';
+		break;
+	default:
+		$btnalignment = '';
+}
 // CTA BUTTONS
 if ( have_rows('cta_buttons') ): ?>
-<ul class="cta-button-container<?php if ( $flex ): echo ' display-flex'; endif; ?>">
+<ul class="cta-button-container<?php if ( $flex ): echo ' display-flex'; endif; if ($btnalignment): echo $btnalignment; endif; ?>">
 						
 <?php while ( have_rows('cta_buttons') ): the_row();
 						
