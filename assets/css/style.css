@@ -2826,9 +2826,9 @@ footer .socialMedia li:first-of-type {
 }
 
 .btn-darkgrey:hover, .light .btn-darkgrey:hover {
-	background-color: #f5f5f5;
-	color: #444;
-	border-color: #f5f5f5;
+	background-color: #a5a5a5;
+	color: #a5a5a5;
+	border-color: #a5a5a5;
 	transition: 0.25s ease-in-out;
 }
 
