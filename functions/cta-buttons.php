@@ -7,10 +7,10 @@ switch ($btnalignment) {
 		$btnalignment = '';
 		break;
 	case 'center':
-		$btnalignment = ' display-flex center-lg center-md';
+		$btnalignment = ' display-flex center-lg center-md center-sm center-xs';
 		break;
 	case 'right':
-		$btnalignment = ' display-flex end-lg end-md';
+		$btnalignment = ' display-flex end-lg end-md end-sm end-xs';
 		break;
 	default:
 		$btnalignment = '';
