@@ -2821,6 +2821,7 @@ footer .socialMedia li:first-of-type {
 .btn-darkgrey {
 	background-color: #444;
 	color: #fff;
+	border-color: #444;
 }
 
 .btn-lightgrey {
