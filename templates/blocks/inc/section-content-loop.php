@@ -38,12 +38,12 @@ switch ( $txtalign ) {
 			echo '
 			<div style="max-width:' . $maxwidth . 'px;">' .
 				$content;
-				include 'content-cta-button.php';
+				cta_buttons();
 			echo '
 			</div>';
 		} else {
 			echo $content;
-			include 'content-cta-button.php';
+			echo cta_buttons();
 		}
 	} ?>
 			
