@@ -2810,6 +2810,7 @@ footer .socialMedia li:first-of-type {
 .btn-lightgreen {
 	background-color: #d7dccd;
 	color: #444;
+	border-color: #d7dccd;
 }
 
 .btn-darkgreen {
