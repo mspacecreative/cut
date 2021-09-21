@@ -97,7 +97,7 @@ footer .socialMedia li:first-of-type {
 }
 
 // BUTTON COLOURS
-.btn-lightgreen {
+.btn-lightgreen, .light .btn-lightgreen {
 	background-color: $brandlightgreen;
 	color: $branddarkgrey;
 	border-color: $brandlightgreen;
@@ -117,7 +117,7 @@ footer .socialMedia li:first-of-type {
 	border-color: $brandlightgrey;
 	transition: 0.25s ease-in-out;
 }
-.btn-lightgrey {
+.btn-lightgrey, .light .btn-lightgrey {
 	background-color: $brandlightgrey;
 	color: $branddarkgrey;
 }
