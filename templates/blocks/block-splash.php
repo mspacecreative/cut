@@ -64,7 +64,7 @@ $flex = get_field('inline_buttons');
 						} ?>
 						
 						<li>
-							<a <?php if ( $linktype == 'anchor' ): echo 'href="#'; echo $result; echo '"'; else: echo 'href="'; echo $result; echo '"'; endif; ?> class="button"<?php if ($btncolor): $btncolor; endif; ?>"<?php if ($linktype == 'external'): echo ' target="_blank"'; endif; ?>><?php if ( $label ): echo $label; else: echo esc_html_e('Learn more'); endif; ?></a>
+							<a <?php if ( $linktype == 'anchor' ): echo 'href="#'; echo $result; echo '"'; else: echo 'href="'; echo $result; echo '"'; endif; ?> class="button"<?php if ($btncolor): echo $btncolor; endif; ?>"<?php if ($linktype == 'external'): echo ' target="_blank"'; endif; ?>><?php if ( $label ): echo $label; else: echo esc_html_e('Learn more'); endif; ?></a>
 						</li>
 						
 						<?php endwhile; ?>
