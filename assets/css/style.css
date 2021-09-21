@@ -2737,6 +2737,7 @@ a {
 	list-style: none;
 	padding: 0;
 	margin-bottom: 3em;
+	margin-top: 1em;
 }
 
 .socialMedia {
@@ -2818,10 +2819,17 @@ footer .socialMedia li:first-of-type {
 	color: #fff;
 }
 
-.btn-darkgrey {
+.btn-darkgrey, .light .btn-darkgrey {
 	background-color: #444;
 	color: #fff;
 	border-color: #444;
+}
+
+.btn-darkgrey:hover, .light .btn-darkgrey:hover {
+	background-color: #fff;
+	color: #444;
+	border-color: #fff;
+	transition: 0.25s ease-in-out;
 }
 
 .btn-lightgrey {

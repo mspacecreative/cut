@@ -361,3 +361,4 @@ include 'functions/tinymce.php';
 include 'functions/shortcodes.php';
 include 'functions/widgets.php';
 include 'functions/insight-cta.php';
+include 'functions/cta-buttons.php';

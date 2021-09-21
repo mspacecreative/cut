@@ -45,6 +45,7 @@ if ( have_rows('column') ): ?>
 				<?php 
 				if ( $content ) {
 				echo $content;
+				echo cta_buttons();
 				}
 				?>
 				
