@@ -6,7 +6,7 @@
 			
 			<div class="inner">
 
-				<h1 class="page-title"><?php echo get_the_title(get_the_ID(647)); ?></h1>
+				<h1 class="page-title"><?php echo get_the_title( get_option('page_for_posts', true) ); ?></h1>
 	
 				<?php get_template_part( 'loop' ); ?>
 	
