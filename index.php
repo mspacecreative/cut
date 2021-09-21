@@ -6,7 +6,7 @@
 			
 			<div class="inner">
 
-				<h1 class="page-title"><?php esc_html_e( 'Insights' ); ?></h1>
+				<h1 class="page-title"><?php get_the_title(647); ?></h1>
 	
 				<?php get_template_part( 'loop' ); ?>
 	

@@ -27,8 +27,7 @@ function my_acf_init() {
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
-			'keywords'			=> array( 'splash', 'landing', 'video' ),
-			'mode'				=> 'edit',
+//			'keywords'			=> array( 'splash', 'landing', 'video' ),
 			'supports'			=> [
 				'align' => false,
 				'anchor' => true,
