@@ -112,9 +112,9 @@ footer .socialMedia li:first-of-type {
 	border-color: $branddarkgrey;
 }
 .btn-darkgrey:hover, .light .btn-darkgrey:hover {
-	background-color: #fff;
+	background-color: $brandlightgrey;
 	color: $branddarkgrey;
-	border-color: #fff;
+	border-color: $brandlightgrey;
 	transition: 0.25s ease-in-out;
 }
 .btn-lightgrey {
