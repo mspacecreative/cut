@@ -2353,7 +2353,7 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		padding: 2em;
 	}
 	
-	.close-cookies {
+	.cookies button {
 		width: 100%;
 		padding: 2em;
 		position: relative;
