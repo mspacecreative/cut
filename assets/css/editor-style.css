@@ -2345,6 +2345,24 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		background-size: 100%;
 	}
 	
+	.cookies-content .col:first-of-type {
+		padding-right: 0;
+	}
+	
+	.cookies-content .col:first-of-type > .inner {
+		padding: 2em;
+	}
+	
+	.close-cookies {
+		width: 100%;
+		padding: 2em;
+		position: relative;
+	}
+	
+	.cookie-close-container {
+		padding: 0;
+	}
+	
 	.bottom-left, .bottom-right {
 		margin-top: 2em;
 	}

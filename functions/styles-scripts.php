@@ -58,6 +58,11 @@ function torrent_styles() {
     wp_register_style( 'fontawesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), null );
     wp_enqueue_style( 'fontawesome' );
     
+    // JS COOKIES
+    wp_register_script('js-cookie', 'https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js', array('jquery'), null, true );
+	// Enqueue Scripts
+	wp_enqueue_script( 'js-cookie' );
+    
     // MODAL SCRIPT
     wp_register_script('modal-script', get_template_directory_uri() . '/assets/js/modal.js', array('jquery'), false, true);
     // Localize the script with new data
