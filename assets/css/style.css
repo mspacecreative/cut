@@ -2493,7 +2493,7 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 }
 
 @media (max-device-width: 55em) and (orientation: landscape) {
-	.cookie-close-container {
+	.cookies-content .cookie-close-container {
 		padding: 0;
 		flex: auto;
 		max-width: 100%;
@@ -2622,7 +2622,7 @@ section .wpcf7-submit, section input[type=email], section select, section input[
 		position: relative;
 	}
 	
-	.cookie-close-container {
+	.cookies-content .cookie-close-container {
 		padding: 0;
 		flex: auto;
 		max-width: 100%;
