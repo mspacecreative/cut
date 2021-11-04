@@ -139,6 +139,11 @@
 	    //height: calc(100vh - 85px);
 	    //background-size: cover;
 	}
+	.cookie-close-container {
+		padding: 0;
+		flex: auto;
+		max-width: 100%;
+	}
 	header > .inner, .inner {
 		padding-left: 2em;
 		padding-right: 2em;
@@ -241,6 +246,8 @@
 	}
 	.cookie-close-container {
 		padding: 0;
+		flex: auto;
+		max-width: 100%;
 	}
 	.bottom-left, .bottom-right {
 		margin-top: 2em;
