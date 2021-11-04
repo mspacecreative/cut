@@ -1,29 +1,6 @@
 (function( root, $, undefined ) {
 	"use strict";
 	
-	/*
-	if ( $('.prev').length ) {
-		if ( $('.prev').html().length < 1 ) {
-			$('.prev').css('visibility', 'hidden');
-		}
-	}
-	*/
-	
-	// COOKIES
-	if (!$.cookie("cookie-notice")) {
-        $("#dialog-modal").dialog({
-            height: 380,
-            width: 500,
-            modal: true,
-            buttons: {
-                Ok: function () {
-                    $.cookie("cookie-notice", 1, { expires : 30 });
-                    $(this).dialog("close");
-                }
-            }
-        });
-    }
-	
 	$(window).on("load resize scroll", function() {
 		$(".section_has_bg_img").each(function() {
 			if (window.matchMedia("(max-width: 480px)").matches) {
